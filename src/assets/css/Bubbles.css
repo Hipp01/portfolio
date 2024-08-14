@@ -1,0 +1,195 @@
+.soapBubble {
+  position: relative;
+  z-index: 1;
+  width: 15vmin;
+  height: 15vmin;
+  outline: 0 solid rgba(0, 0, 0, 0.7);
+  transition: 1s;
+}
+
+.bubble-phone {
+  top: 30%;
+  left: 50%;
+}
+
+.bubble-rope {
+  top: 30%;
+  left: 30%;
+}
+
+.bubble-computer {
+  top: 0%;
+  left: 60%;
+  width: 20vmin;
+  height: 20vmin;
+}
+
+.bubble-suitcase {
+  top: 0%;
+  left: 50%;
+}
+
+.bubble-routesetting {
+  top: 0%;
+  left: 40%;
+  width: 20vmin;
+  height: 20vmin;
+}
+
+.bubble-book {
+  top: -30%;
+  left: 30%;
+}
+
+.soapBubble div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.bubbleImg {
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  transition: 1s;
+  background-image: url("data:image/svg+xml;utf8, <svg width='100' height='100' xmlns='http://www.w3.org/2000/svg'><circle cx='50' cy='50' r='50' fill='none'/><circle cx='24' cy='24' r='7.5' fill='white' /><path d='M78 58.4999C69.5 72.4999 56 78.4999 53.5 80.9999C51 83.4999 50 89.9999 59.5 87.4999C69 84.9999 82.5 76.4999 86.5 67.4999C90.5 58.5 86.5 44.5 78 58.4999Z' fill='rgba(255,255,255,.9)' style='filter:blur(0px)'/></svg>"),
+    radial-gradient(circle at 70% 96%, white 0.5%, rgba(255, 255, 200, 0.4) 2%, transparent 9%),
+    radial-gradient(
+      at 30% 20%,
+      white 1%,
+      rgba(255, 255, 200, 1) 2%,
+      transparent 20%,
+      transparent 50%,
+      rgba(0, 200, 200, 0.3) 73%,
+      rgba(0, 80, 80, 0.3) 84%
+    ),
+    radial-gradient(circle at 0% 0%, rgba(255, 0, 255, 0.7) 2%, transparent 80%);
+  background-size: cover;
+  z-index: -1;
+}
+
+/* Animation */
+/* Animation 1: Move horizontally (small) */
+.moveX1 {
+  animation-name: moveX1;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes moveX1 {
+  from {
+    transform: translateX(-2vmin);
+  }
+  to {
+    transform: translateX(2vmin);
+  }
+}
+
+/* Animation 2: Move horizontally (large) */
+.moveX2 {
+  animation-name: moveX2;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes moveX2 {
+  from {
+    transform: translateX(-4vmin);
+  }
+  to {
+    transform: translateX(4vmin);
+  }
+}
+
+/* Animation 3: Move vertically (small) */
+.moveY1 {
+  animation-name: moveY1;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes moveY1 {
+  from {
+    transform: translateY(-1.5vmin);
+  }
+  to {
+    transform: translateY(1.5vmin);
+  }
+}
+
+/* Animation 4: Move vertically (large) */
+.moveY2 {
+  animation-name: moveY2;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes moveY2 {
+  from {
+    transform: translateY(-3vmin);
+  }
+  to {
+    transform: translateY(3vmin);
+  }
+}
+
+/* Animation 5: Deform horizontally (fast) */
+.deformX1 {
+  animation-name: deformX1;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes deformX1 {
+  0% {
+    transform: none;
+  }
+  25% {
+    transform: scaleX(1.1) skewX(3deg);
+  }
+  50% {
+    transform: none;
+  }
+  75% {
+    transform: scaleX(1.1) skewX(-3deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+/* Animation 6: Deform vertically (slow) */
+.deformY1 {
+  animation-name: deformY1;
+  animation-duration: 6s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes deformY1 {
+  0% {
+    transform: none;
+  }
+  25% {
+    transform: scaleY(1.1) skewY(3deg);
+  }
+  50% {
+    transform: none;
+  }
+  75% {
+    transform: scaleY(1.1) skewY(-3deg);
+  }
+  100% {
+    transform: none;
+  }
+}
