@@ -21,6 +21,5 @@ export default defineComponent({
   font-family: Avenir, Helvetica, Arial, sans-serif;
   text-align: center;
   color: #333;
-  margin-top: 60px;
 }
 </style>

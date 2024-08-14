@@ -1,41 +1,37 @@
 <template>
   <div class="home">
     <div class="bg-image">
-      <div class="overlay text-center text-white py-5 px-3">
+      <div class="text-center text-white py-5 px-3">
         <h1>Welcome to My Portfolio</h1>
-        <div class="mt-4">
-          <button class="btn btn-primary me-2" @click="goToProject('project1')">Project 1</button>
-          <button class="btn btn-primary me-2" @click="goToProject('project2')">Project 2</button>
-          <button class="btn btn-primary" @click="goToProject('project3')">Project 3</button>
-        </div>
       </div>
+      <img
+        src="@/assets/computer.png"
+        alt="Computer"
+        class="fixed-computer"
+        onclick="window.location.href = '/about/code'"
+      />
+      <img
+        src="@/assets/phone.png"
+        alt="Phone"
+        class="fixed-phone"
+        onclick="window.location.href = '/about/phone'"
+      />
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { useRouter } from 'vue-router'
 
 export default defineComponent({
-  name: 'Home',
-  setup() {
-    const router = useRouter()
-
-    const goToProject = (project: string) => {
-      router.push({ name: 'project', params: { project } })
-    }
-
-    return {
-      goToProject
-    }
-  }
+  name: 'HomePage',
+  setup() {}
 })
 </script>
 
 <style scoped>
 .home {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,12 +39,96 @@ export default defineComponent({
 
 .bg-image {
   background: url('@/assets/octopus.png') no-repeat center center;
-  background-size: cover;
+  background-size: 50%;
+  background-color: #090909;
   height: 100%;
   width: 100%;
+  position: relative;
 }
 
-.overlay {
-  background: rgba(0, 0, 0, 0.5);
+.fixed-computer {
+  position: absolute;
+  top: 61%;
+  left: 33%;
+  transform: translate(-50%, -50%);
+  width: 160px;
+}
+.fixed-computer:hover {
+  width: 180px;
+  transition: 0.5s;
+}
+
+.fixed-phone {
+  position: absolute;
+  top: 78%;
+  left: 34%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+}
+.fixed-phone:hover {
+  width: 120px;
+  transition: 0.5s;
+}
+
+@media (max-width: 900px) {
+  .home {
+    height: 80vh;
+  }
+  .bg-image {
+    background-size: 100%;
+  }
+  .fixed-computer {
+    position: absolute;
+    top: 59%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    width: 140px;
+  }
+  .fixed-computer:hover {
+    width: 150px;
+    transition: 0.5s;
+  }
+  .fixed-phone {
+    position: absolute;
+    top: 72%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+  }
+  .fixed-phone:hover {
+    width: 100px;
+    transition: 0.5s;
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    height: 80vh;
+  }
+  .bg-image {
+    background-size: 100%;
+  }
+  .fixed-computer {
+    position: absolute;
+    top: 56%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+  }
+  .fixed-computer:hover {
+    width: 70px;
+    transition: 0.5s;
+  }
+  .fixed-phone {
+    position: absolute;
+    top: 70%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+  }
+  .fixed-phone:hover {
+    width: 60px;
+    transition: 0.5s;
+  }
 }
 </style>
