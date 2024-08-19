@@ -7,37 +7,15 @@
 
 .bg-image {
   background: url('@/assets/images/octopus.png') no-repeat center center;
-  background-size: 50%;
+  margin-top: 2%;
+  background-size: 40%;
   background-color: #03224c;
   height: 100%;
   width: 100%;
-  position: relative;
+  position: fixed;
 }
 
-.fixed-phone {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100px;
-}
-.fixed-phone:hover {
-  width: 120px;
-  transition: 0.5s;
-}
-
-.fixed-computer {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 150px;
-}
-.fixed-computer:hover {
-  width: 180px;
-  transition: 0.5s;
-}
-
+.fixed-phone,
 .fixed-rope {
   position: absolute;
   top: 50%;
@@ -45,33 +23,31 @@
   transform: translate(-50%, -50%);
   width: 100px;
 }
-.fixed-rope:hover {
-  width: 120px;
-  transition: 0.5s;
-}
 
+.fixed-computer,
 .fixed-routesetting {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100px;
-}
-.fixed-routesetting:hover {
-  width: 120px;
-  transition: 0.5s;
+  transform: translate(-45%, -50%);
+  width: 140px;
 }
 
+.fixed-routesetting {
+  width: 120px;
+}
+
+.fixed-suitcase,
 .fixed-book {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-55%, -45%);
   width: 100px;
 }
-.fixed-book:hover {
-  width: 120px;
-  transition: 0.5s;
+
+.fixed-book {
+  width: 90px;
 }
 
 .fixed-marelle {
@@ -83,17 +59,5 @@
 }
 .fixed-marelle:hover {
   width: 350px;
-  transition: 0.5s;
-}
-
-.fixed-suitcase {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 120px;
-}
-.fixed-suitcase:hover {
-  width: 140px;
   transition: 0.5s;
 }

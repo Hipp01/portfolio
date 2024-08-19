@@ -2,7 +2,8 @@
   <div class="home">
     <div class="bg-image">
       <div class="text-center text-white py-5 px-3">
-        <h1>Welcome to My Portfolio</h1>
+        <h1 class="mt-4 display-4">Hippolyte Larzul</h1>
+        <h3 class="mb-4">Full Stack Developer</h3>
       </div>
       <div class="container">
         <div class="row">
@@ -12,14 +13,10 @@
                 <div class="moveY1">
                   <div class="deformX1">
                     <div class="deformY1">
-                      <div class="bubbleImg">
-                        <img
-                          src="@/assets/images/phone.png"
-                          alt="Phone"
-                          class="fixed-phone"
-                          onclick="window.location.href = '/about/phone'"
-                        />
-                      </div>
+                      <a href="/about/phone">
+                        <div class="bubbleImg"></div>
+                        <img src="@/assets/images/phone.png" alt="Phone" class="fixed-phone" />
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -32,14 +29,10 @@
                 <div class="moveY2">
                   <div class="deformX2">
                     <div class="deformY2">
-                      <div class="bubbleImg">
-                        <img
-                          src="@/assets/images/rope.png"
-                          alt="Rope"
-                          class="fixed-rope"
-                          onclick="window.location.href = '/about/climbing'"
-                        />
-                      </div>
+                      <a href="/about/climbing">
+                        <div class="bubbleImg"></div>
+                        <img src="@/assets/images/rope.png" alt="Rope" class="fixed-rope" />
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -54,14 +47,14 @@
                 <div class="moveY2">
                   <div class="deformX2">
                     <div class="deformY1">
-                      <div class="bubbleImg">
+                      <a href="/about/code">
+                        <div class="bubbleImg"></div>
                         <img
                           src="@/assets/images/computer.png"
                           alt="Computer"
                           class="fixed-computer"
-                          onclick="window.location.href = '/about/code'"
                         />
-                      </div>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -74,14 +67,14 @@
                 <div class="moveY1">
                   <div class="deformX1">
                     <div class="deformY2">
-                      <div class="bubbleImg">
+                      <a href="/about/route-setting">
+                        <div class="bubbleImg"></div>
                         <img
                           src="@/assets/images/routesetting.png"
                           alt="Route Setting"
                           class="fixed-routesetting"
-                          onclick="window.location.href = '/about/route-setting'"
                         />
-                      </div>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -96,14 +89,14 @@
                 <div class="moveY1">
                   <div class="deformX2">
                     <div class="deformY1">
-                      <div class="bubbleImg">
+                      <a href="/about/travel">
+                        <div class="bubbleImg"></div>
                         <img
                           src="@/assets/images/suitcase.png"
                           alt="Suitcase"
                           class="fixed-suitcase"
-                          onclick="window.location.href = '/about/travel'"
                         />
-                      </div>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -116,14 +109,10 @@
                 <div class="moveY2">
                   <div class="deformX1">
                     <div class="deformY2">
-                      <div class="bubbleImg">
-                        <img
-                          src="@/assets/images/book.png"
-                          alt="Math Book"
-                          class="fixed-book"
-                          onclick="window.location.href = '/about/education'"
-                        />
-                      </div>
+                      <a href="/about/education">
+                        <div class="bubbleImg"></div>
+                        <img src="@/assets/images/book.png" alt="Math Book" class="fixed-book" />
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -131,6 +120,7 @@
             </div>
           </div>
         </div>
+        <p class="text-light">Cliquez sur les bulles pour en savoir plus !</p>
       </div>
     </div>
   </div>

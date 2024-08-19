@@ -1,44 +1,57 @@
 .soapBubble {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   width: 15vmin;
   height: 15vmin;
   outline: 0 solid rgba(0, 0, 0, 0.7);
-  transition: 1s;
+  transition: 2s;
+}
+.soapBubble:hover {
+  width: 18vmin;
+  height: 18vmin;
+  cursor: pointer;
+}
+.soapBubble.bubble-computer:hover {
+  width: 23vmin;
+  height: 23vmin;
+}
+.soapBubble.bubble-routesetting:hover {
+  width: 23vmin;
+  height: 23vmin;
 }
 
 .bubble-phone {
-  top: 30%;
-  left: 50%;
+  top: -10%;
+  left: 45%;
 }
 
 .bubble-rope {
-  top: 30%;
-  left: 30%;
+  top: -10%;
+  left: 35%;
 }
 
 .bubble-computer {
-  top: 0%;
-  left: 60%;
+  top: 10%;
+  left: 25%;
+  width: 20vmin;
+  height: 20vmin;
+}
+
+.bubble-routesetting {
+  top: 10%;
+  left: 45%;
   width: 20vmin;
   height: 20vmin;
 }
 
 .bubble-suitcase {
-  top: 0%;
-  left: 50%;
-}
-
-.bubble-routesetting {
-  top: 0%;
-  left: 40%;
-  width: 20vmin;
-  height: 20vmin;
+  top: 40%;
+  left: 45%;
 }
 
 .bubble-book {
-  top: -30%;
-  left: 30%;
+  top: 40%;
+  left: 35%;
 }
 
 .soapBubble div {
@@ -52,7 +65,7 @@
   border: 3px solid rgba(255, 255, 255, 0.5);
   transition: 1s;
   background-image: url("data:image/svg+xml;utf8, <svg width='100' height='100' xmlns='http://www.w3.org/2000/svg'><circle cx='50' cy='50' r='50' fill='none'/><circle cx='24' cy='24' r='7.5' fill='white' /><path d='M78 58.4999C69.5 72.4999 56 78.4999 53.5 80.9999C51 83.4999 50 89.9999 59.5 87.4999C69 84.9999 82.5 76.4999 86.5 67.4999C90.5 58.5 86.5 44.5 78 58.4999Z' fill='rgba(255,255,255,.9)' style='filter:blur(0px)'/></svg>"),
-    radial-gradient(circle at 70% 96%, white 0.5%, rgba(255, 255, 200, 0.4) 2%, transparent 9%),
+    radial-gradient(circle at 70% 96%, white 0.5%, rgba(255, 255, 200, 0.4) 2%, transparent 20%),
     radial-gradient(
       at 30% 20%,
       white 1%,
@@ -62,9 +75,11 @@
       rgba(0, 200, 200, 0.3) 73%,
       rgba(0, 80, 80, 0.3) 84%
     ),
-    radial-gradient(circle at 0% 0%, rgba(255, 0, 255, 0.7) 2%, transparent 80%);
+    radial-gradient(circle at 0% 0%, rgba(255, 0, 255, 0.7) 2%, transparent 50%);
   background-size: cover;
-  z-index: -1;
+  z-index: 1;
+}
+.bubbleImg:hover {
 }
 
 /* Animation */

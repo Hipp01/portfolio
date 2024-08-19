@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">My Portfolio</a>
+      <a class="navbar-brand" href="/"><span class="text-info">HIPPO</span>rtfolio</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -38,4 +38,10 @@ export default defineComponent({
 })
 </script>
 
-<style scoped></style>
+<style scoped>
+.navbar {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+}
+</style>
