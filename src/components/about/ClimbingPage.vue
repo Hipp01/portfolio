@@ -1,6 +1,8 @@
 <template>
   <div class="climbing-page">
-    <h1>About Climbing</h1>
+    <div class="informations">
+      <h1>About Climbing</h1>
+    </div>
     <!-- Add your content here -->
   </div>
 </template>
@@ -13,5 +15,11 @@ export default {
 </script>
 
 <style scoped>
-/* Add your component styles here */
+.informations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f9fa;
+}
 </style>
