@@ -13,7 +13,7 @@
                 <div class="moveY1">
                   <div class="deformX1">
                     <div class="deformY1">
-                      <a href="/about/phone">
+                      <a href="/about/mobile">
                         <div class="bubbleImg"></div>
                         <img src="@/assets/images/phone.png" alt="Phone" class="fixed-phone" />
                       </a>

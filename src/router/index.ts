@@ -14,7 +14,7 @@ const routes = [
   { path: '/projects', name: 'projects', component: Projects },
   { path: '/contact', name: 'contact', component: Contact },
   { path: '/about/code', name: 'code', component: Code },
-  { path: '/about/phone', name: 'phone', component: Smartphone },
+  { path: '/about/mobile', name: 'phone', component: Smartphone },
   { path: '/about/climbing', name: 'climbing', component: Climbing },
   { path: '/about/route-setting', name: 'route-setting', component: RouteSetting },
   { path: '/about/education', name: 'education', component: Education },
