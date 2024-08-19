@@ -1,9 +1,9 @@
 <template>
   <div class="dev-mobile">
     <div class="container">
-      <h1 class="title mt-5">Mon développement d'Applications Mobiles</h1>
+      <h1 class="title my-5">Mon parcours dans le développement d'Applications Mobiles</h1>
       <p>
-        Depuis 2021 et durant mon Master en E-Services, je suis passionné par le développement
+        Depuis 2021 et durant mon Master en E-Services, je me suis passionné par le développement
         d'applications mobiles en utilisant diverses technologies telles que
         <a id="react" href="https://reactnative.dev" target="_blank">ReactNative</a>,
         <a id="node" href="https://nodejs.org" target="_blank">Node.js</a>,
@@ -14,14 +14,22 @@
       <h4 class="my-4">Voici quelques projets sur lesquels j'ai travaillé :</h4>
 
       <div class="project" v-for="(project, index) in projects" :key="index">
-        <a :href="project.link">
-          <img :src="project.logo" :alt="project.name" class="project-logo" />
-          <h5 class="text-center text-info mt-2 mb-0 me-3">{{ project.title }}</h5>
-          <p class="project-langage text-center pt-2 mb-0 me-3">#{{ project.langage }}</p>
-        </a>
-        <div class="project-details">
-          <h2 class="projetc-name mb-3">{{ project.name }}</h2>
-          <p>{{ project.description }}</p>
+        <div class="row flex-md-row flex-column px-2">
+          <div class="col-md-2 col-12 mt-2 align-content-center text-md-center text-start">
+            <a :href="project.link" class="d-flex flex-md-column align-items-center">
+              <img :src="project.logo" :alt="project.name" class="project-logo me-md-0 me-3" />
+              <div class="d-flex flex-column align-items-start ms-md-0 ms-3 mt-md-2">
+                <h5 class="text-info mb-0">{{ project.title }}</h5>
+                <p class="project-langage mb-0">#{{ project.langage }}</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-10 col-12">
+            <div class="project-details">
+              <h2 class="projetc-name mb-3">{{ project.name }}</h2>
+              <p>{{ project.description }}</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -175,5 +183,22 @@ project a {
 .project-langage {
   font-size: 1.1rem;
   color: aquamarine;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+  .project {
+    flex-direction: column;
+  }
+
+  .project-logo {
+    margin-right: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 80px;
+    height: 80px;
+  }
 }
 </style>
