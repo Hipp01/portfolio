@@ -32,6 +32,13 @@
           </div>
         </div>
       </div>
+      <div>
+        <h5 class="text-secondary my-4">
+          Pour consulter mes autres projets, dans le développement en général, vous pouvez regarder
+          <a href="/about/code" class="text-info"><u>cette page</u></a
+          >.
+        </h5>
+      </div>
     </div>
   </div>
 </template>
@@ -70,7 +77,7 @@ export default defineComponent({
         {
           title: "Bou'D'Brousse",
           langage: 'ReactNative #Node.js',
-          name: "Application de Gestion pour un Club d'Escalade (ReactNative et Node.js)",
+          name: "Application de Gestion pour un Club d'Escalade",
           description:
             "Mon premier projet majeur était une application pour mon club d'escalade. Cette application gère les adhérents du club et leur permet de valider leurs entrées en fonction de leurs créneaux horaires autorisés. L'application a été développée avec ReactNative, et l'API avec Node.js, offrant une expérience utilisateur fluide sur Android et iOS.",
           logo: bdb,
@@ -79,7 +86,7 @@ export default defineComponent({
         {
           title: 'YouHunt',
           langage: 'Angular',
-          name: 'Application de Chasse au Trésor en Réalité (Angular)',
+          name: 'Application de Chasse au Trésor en Réalité',
           description:
             "Pour mon projet de fin de Master, j'ai créé une application qui permet de concevoir et de participer à des chasses au trésor dans la vie réelle. Chaque lieu atteint est associé à des questions, un système de points, et d'autres fonctionnalités engageantes, rendant l'expérience interactive et amusante.",
           logo: youhunt,
