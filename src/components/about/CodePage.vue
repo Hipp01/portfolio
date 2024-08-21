@@ -45,7 +45,7 @@
           >.
         </h5>
       </div>
-      <h4 class="px-5">
+      <h4 class="px-4">
         Voici une liste de langages supplémentaires que j'ai appris durant mon cursus :
       </h4>
       <div id="langages" class="row d-flex justify-content-center pb-0 mb-4">
