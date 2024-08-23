@@ -101,7 +101,7 @@ export default defineComponent({
       projects: [
         {
           title: 'Make my sledge',
-          langage: 'Python #React.js',
+          langage: 'Flask #React.js',
           name: 'Application web de gestion de chiens de traineau',
           description:
             "Durant mon année de césure (2023-2024) en Laponie Suédoise, j'ai développé une application web pour gérer les chiens et les traineaux de l'élevage. <br/> Avec cette application les utilisateurs peuvent avoir des informations sur les chiens, en ajouter, les modifier et les supprimer. Ils peuvent aussi créer différents traineaux en fonction de leurs poids, aisance avec les chiens et leurs envie de vitesse. Les traineaux sont créés de façon à ce que les chiens qui ne s'entendent pas ne soient pas ensemble.",
