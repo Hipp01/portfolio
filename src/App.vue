@@ -9,7 +9,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import Navbar from './components/NavBar.vue'
-import FooterView from './components/Footer.vue'
+import FooterView from './components/FooterComponent.vue'
 
 export default defineComponent({
   components: {
