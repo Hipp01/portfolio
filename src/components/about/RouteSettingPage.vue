@@ -125,16 +125,17 @@
       <div id="contact" class="my-5">
         <h5 class="text-secondary my-4">
           Pour plus d'informations ou pour discuter de projets d'ouverture, vous pouvez me contacter
-          directement <a href="/contact" class="text-info"><u>ici</u></a
-          >.
+          directement
+          <router-link to="/contact" class="nav-link text-info"
+            >ici<span class="text-secondary">.</span></router-link
+          >
         </h5>
       </div>
       <div id="climbing" class="my-5">
         <h5 class="text-secondary my-4">
           Je grimpe depuis 2011, pour plus d'informations sur mon parcours en escalade, vous pouvez
           consulter
-          <a href="/about/climbing" class="text-warning"><u>cette page</u></a
-          >.
+          <router-link to="/about/climbing" class="nav-link text-warning">cette page</router-link>
         </h5>
       </div>
     </div>

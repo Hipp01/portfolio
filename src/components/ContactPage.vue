@@ -79,6 +79,7 @@ export default defineComponent({
   background-color: #03224c;
   color: white;
   padding: 20px 0;
+  height: 100vh;
 }
 
 .container {

@@ -49,8 +49,9 @@
       <div class="mt-5">
         <h5 class="text-secondary my-4">
           Pour plus d'informations ou pour réserver un cours, veuillez consulter
-          <a href="/contact" class="text-info"><u>cette page</u></a
-          >.
+          <router-link to="/contact" class="nav-link text-info"
+            >cette page<span class="text-secondary">.</span></router-link
+          >
         </h5>
       </div>
     </div>
