@@ -7,6 +7,7 @@ import Climbing from '../components/about/ClimbingPage.vue'
 import RouteSetting from '../components/about/RouteSettingPage.vue'
 import Education from '../components/about/EducationPage.vue'
 import Animaiton from '../components/about/AnimationPage.vue'
+import Travel from '../components/about/TravelPage.vue'
 
 const routes = [
   { path: '/', name: 'home', component: Home },
@@ -16,7 +17,8 @@ const routes = [
   { path: '/about/climbing', name: 'climbing', component: Climbing },
   { path: '/about/route-setting', name: 'route-setting', component: RouteSetting },
   { path: '/about/education', name: 'education', component: Education },
-  { path: '/about/animation', name: 'animation', component: Animaiton }
+  { path: '/about/animation', name: 'animation', component: Animaiton },
+  { path: '/about/travel', name: 'travel', component: Travel }
 ]
 
 const router = createRouter({
