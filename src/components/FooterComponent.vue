@@ -15,7 +15,7 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'Footer',
+  name: 'FooterComonent',
   methods: {
     goBack() {
       this.$router.go(-1)
@@ -83,5 +83,11 @@ footer {
 
 .legal-link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  footer {
+    height: 50px;
+  }
 }
 </style>

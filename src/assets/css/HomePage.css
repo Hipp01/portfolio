@@ -3,10 +3,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #03224c;
+  overflow: hidden;
 }
 
 .bg-image {
-  background: url('@/assets/images/octopus.png') no-repeat center center;
+  background: url('@/assets/images/seahorse.png') no-repeat center calc(50% + 60px);
   margin-top: 2%;
   background-size: 40%;
   background-color: #03224c;
@@ -50,14 +52,89 @@
   width: 90px;
 }
 
-.fixed-marelle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-90deg);
-  width: 330px;
+@media (max-width: 320px) {
+  .bg-image {
+    background: url('@/assets/images/seahorse.png') no-repeat center center;
+    background-size: 100%;
+  }
+
+  .fixed-phone,
+  .fixed-rope,
+  .fixed-suitcase,
+  .fixed-book {
+    width: 35px;
+  }
+  .fixed-computer,
+  .fixed-routesetting {
+    width: 40px;
+  }
 }
-.fixed-marelle:hover {
-  width: 350px;
-  transition: 0.5s;
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .bg-image {
+    background: url('@/assets/images/seahorse.png') no-repeat center calc(50%);
+    background-size: 100%;
+  }
+
+  .fixed-phone,
+  .fixed-rope,
+  .fixed-suitcase {
+    width: 45px;
+  }
+  .fixed-book {
+    width: 40px;
+  }
+  .fixed-computer,
+  .fixed-routesetting {
+    width: 55px;
+  }
+  .click {
+    margin-top: 50%;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .bg-image {
+    background: url('@/assets/images/seahorse.png') no-repeat center calc(50% + 50px);
+    background-size: 80%;
+  }
+
+  .fixed-phone,
+  .fixed-rope,
+  .fixed-suitcase {
+    width: 70px;
+  }
+  .fixed-book {
+    width: 60px;
+  }
+  .fixed-computer,
+  .fixed-routesetting {
+    width: 80px;
+  }
+  .click {
+    margin-top: 40%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .bg-image {
+    background: url('@/assets/images/seahorse.png') no-repeat center center;
+    background-size: 80%;
+  }
+
+  .fixed-phone,
+  .fixed-rope,
+  .fixed-suitcase {
+    width: 100px;
+  }
+  .fixed-book {
+    width: 90px;
+  }
+  .fixed-computer,
+  .fixed-routesetting {
+    width: 120px;
+  }
+  .click {
+    margin-top: 20%;
+  }
 }

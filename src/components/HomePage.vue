@@ -1,11 +1,11 @@
 <template>
   <div class="home">
     <div class="bg-image">
-      <div class="text-center text-white py-5 px-3">
+      <div class="text-center text-white pt-5 px-3">
         <h1 class="mt-4 display-4">Hippolyte Larzul</h1>
         <h3 class="mb-4">Full Stack Developer</h3>
       </div>
-      <div class="container">
+      <div class="container bubbles">
         <div class="row">
           <div class="col-6 mb-4">
             <div class="soapBubble bubble-phone">
@@ -120,7 +120,7 @@
             </div>
           </div>
         </div>
-        <p class="text-light">Cliquez sur les bulles pour en savoir plus !</p>
+        <p class="text-light click">Cliquez sur les bulles pour en savoir plus !</p>
       </div>
     </div>
   </div>
