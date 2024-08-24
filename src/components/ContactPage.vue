@@ -39,16 +39,18 @@
             ></textarea>
           </div>
           <button type="submit" class="btn btn-primary">Envoyer le message</button>
+          <div v-if="statusMessage" class="mt-3">{{ statusMessage }}</div>
         </form>
       </div>
     </div>
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script>
+// Import EmailJS
+import emailjs from 'emailjs-com'
 
-export default defineComponent({
+export default {
   name: 'ContactPage',
   data() {
     return {
@@ -56,14 +58,36 @@ export default defineComponent({
       surname: '',
       email: '',
       subject: '',
-      message: ''
+      message: '',
+      statusMessage: ''
     }
   },
   methods: {
-    submitForm() {
-      console.log(
-        `Nom: ${this.name}, Prénom: ${this.surname}, Email: ${this.email}, Sujet: ${this.subject}, Message: ${this.message}`
-      )
+    async submitForm() {
+      // Preparer les données pour EmailJS
+      const templateParams = {
+        from_name: `${this.name} ${this.surname}`,
+        from_email: this.email,
+        subject: this.subject,
+        message: this.message
+      }
+
+      try {
+        // Envoyer le message via EmailJS
+        await emailjs.send(
+          'service_5rxb8oc',
+          'template_rkfs64i',
+          templateParams,
+          'F1ySnhe-WmvCPZpzx'
+        )
+        this.statusMessage = 'Votre message a été envoyé avec succès !'
+        this.resetForm()
+      } catch (error) {
+        console.error("Erreur lors de l'envoi du message:", error)
+        this.statusMessage = 'Une erreur est survenue, veuillez réessayer plus tard.'
+      }
+    },
+    resetForm() {
       this.name = ''
       this.surname = ''
       this.email = ''
@@ -71,7 +95,7 @@ export default defineComponent({
       this.message = ''
     }
   }
-})
+}
 </script>
 
 <style scoped>
@@ -124,5 +148,11 @@ export default defineComponent({
 .btn-primary:hover {
   background-color: #4b6b96;
   border-color: #4b6b96;
+}
+
+@media (max-width: 1024px) {
+  .contact-page {
+    height: auto;
+  }
 }
 </style>
