@@ -97,7 +97,7 @@
         </h5>
         <ul class="text-start">
           <li>1er aux Jeux Européens Universitaires en équipe en 2022</li>
-          <li>3e ax Jeux Européens Universitaires en Vitesse</li>
+          <li>3e aux Jeux Européens Universitaires en Vitesse</li>
           <li>Champion Régional en 2020</li>
           <li>Champion Départemental en 2020, 2019, 2018, 2017, 2016, 2015, 2014</li>
         </ul>
