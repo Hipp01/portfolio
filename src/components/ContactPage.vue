@@ -1,7 +1,6 @@
 <template>
   <div class="contact-page">
     <div class="container my-5">
-      <div class="my-5"></div>
       <div class="contact-container">
         <h4 class="my-2">Un projet, une question, un besoin ?</h4>
         <h1 class="contact-title my-3">Contactez-moi</h1>
@@ -38,8 +37,21 @@
               required
             ></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Envoyer le message</button>
+          <button
+            type="submit"
+            class="btn btn-primary"
+            :disabled="loading || isRateLimited || maxEmailsReached"
+          >
+            <span v-if="loading">Envoi en cours...</span>
+            <span v-else>Envoyer le message</span>
+          </button>
           <div v-if="statusMessage" class="mt-3">{{ statusMessage }}</div>
+          <div v-if="isRateLimited" class="mt-3 text-danger">
+            Vous avez atteint la limite d'envoi pour cette période. Essayez plus tard.
+          </div>
+          <div v-if="maxEmailsReached" class="mt-3 text-danger">
+            Vous avez atteint la limite maximale d'envoi de messages.
+          </div>
         </form>
       </div>
     </div>
@@ -59,12 +71,39 @@ export default {
       email: '',
       subject: '',
       message: '',
-      statusMessage: ''
+      statusMessage: '',
+      loading: false,
+      isRateLimited: false,
+      maxEmailsReached: false,
+      maxEmails: 3
     }
+  },
+  created() {
+    this.checkEmailLimits()
   },
   methods: {
     async submitForm() {
-      // Preparer les données pour EmailJS
+      if (this.loading || this.isRateLimited || this.maxEmailsReached) return
+
+      // Check rate limit from local storage
+      const lastSent = localStorage.getItem('lastSent')
+      const emailCount = parseInt(localStorage.getItem('emailCount') || '0', 10)
+      const now = Date.now()
+      const limitPeriod = 60 * 60 * 1000 // 1 hour limit
+
+      if (lastSent && now - lastSent < limitPeriod) {
+        this.isRateLimited = true
+        return
+      }
+
+      if (emailCount >= this.maxEmails) {
+        this.maxEmailsReached = true
+        return
+      }
+
+      this.loading = true
+
+      // Prepare data for EmailJS
       const templateParams = {
         from_name: `${this.name} ${this.surname}`,
         from_email: this.email,
@@ -73,7 +112,7 @@ export default {
       }
 
       try {
-        // Envoyer le message via EmailJS
+        // Send message via EmailJS
         await emailjs.send(
           'service_5rxb8oc',
           'template_rkfs64i',
@@ -82,9 +121,15 @@ export default {
         )
         this.statusMessage = 'Votre message a été envoyé avec succès !'
         this.resetForm()
+        // Update local storage with current time and increment email count
+        localStorage.setItem('lastSent', now)
+        localStorage.setItem('emailCount', (emailCount + 1).toString())
+        this.checkEmailLimits() // Check if email limit is reached
       } catch (error) {
         console.error("Erreur lors de l'envoi du message:", error)
         this.statusMessage = 'Une erreur est survenue, veuillez réessayer plus tard.'
+      } finally {
+        this.loading = false
       }
     },
     resetForm() {
@@ -93,6 +138,12 @@ export default {
       this.email = ''
       this.subject = ''
       this.message = ''
+    },
+    checkEmailLimits() {
+      const emailCount = parseInt(localStorage.getItem('emailCount') || '0', 10)
+      if (emailCount >= this.maxEmails) {
+        this.maxEmailsReached = true
+      }
     }
   }
 }
