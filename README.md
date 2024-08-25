@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # portfolio
 =======
+=======
+>>>>>>> 730b3327fcb6dcbfa0ccb946d0a55be60a8c2225
 # portfolio
 
 This template should help get you started developing with Vue 3 in Vite.
@@ -40,4 +43,7 @@ npm run build
 ```sh
 npm run lint
 ```
+<<<<<<< HEAD
 >>>>>>> dc9fe53 (Initial commit)
+=======
+>>>>>>> 730b3327fcb6dcbfa0ccb946d0a55be60a8c2225
