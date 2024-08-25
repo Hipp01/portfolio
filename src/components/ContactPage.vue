@@ -59,7 +59,6 @@
 </template>
 
 <script>
-// Import EmailJS
 import emailjs from 'emailjs-com'
 
 export default {
@@ -121,10 +120,9 @@ export default {
         )
         this.statusMessage = 'Votre message a été envoyé avec succès !'
         this.resetForm()
-        // Update local storage with current time and increment email count
         localStorage.setItem('lastSent', now)
         localStorage.setItem('emailCount', (emailCount + 1).toString())
-        this.checkEmailLimits() // Check if email limit is reached
+        this.checkEmailLimits()
       } catch (error) {
         console.error("Erreur lors de l'envoi du message:", error)
         this.statusMessage = 'Une erreur est survenue, veuillez réessayer plus tard.'
