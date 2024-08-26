@@ -7,15 +7,36 @@
         <form @submit.prevent="submitForm" class="contact-form">
           <div class="form-group mb-3 text-start d-flex align-items-center">
             <label for="name" class="form-label w-25">Nom :</label>
-            <input type="text" id="name" v-model="name" class="form-control w-75" required />
+            <input
+              type="text"
+              id="name"
+              v-model="name"
+              class="form-control w-75"
+              minlength="2"
+              required
+            />
           </div>
           <div class="form-group mb-3 text-start d-flex align-items-center">
             <label for="surname" class="form-label w-25">Prénom :</label>
-            <input type="text" id="surname" v-model="surname" class="form-control w-75" required />
+            <input
+              type="text"
+              id="surname"
+              v-model="surname"
+              class="form-control w-75"
+              minlength="2"
+              required
+            />
           </div>
           <div class="form-group mb-3 text-start d-flex align-items-center">
             <label for="email" class="form-label w-25">Email :</label>
-            <input type="email" id="email" v-model="email" class="form-control w-75" required />
+            <input
+              type="email"
+              id="email"
+              v-model="email"
+              class="form-control w-75"
+              required
+              pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
+            />
           </div>
           <div class="form-group mb-3 text-start d-flex align-items-center">
             <label for="subject" class="form-label w-25">Sujet :</label>
@@ -34,6 +55,8 @@
               v-model="message"
               class="form-control w-75"
               rows="5"
+              minlength="10"
+              maxlength="300"
               required
             ></textarea>
           </div>
@@ -74,7 +97,8 @@ export default {
       loading: false,
       isRateLimited: false,
       maxEmailsReached: false,
-      maxEmails: 3
+      maxEmails: 3,
+      limitPeriod: 12 * 60 * 60 * 1000 // 12 heures en millisecondes
     }
   },
   created() {
@@ -84,15 +108,14 @@ export default {
     async submitForm() {
       if (this.loading || this.isRateLimited || this.maxEmailsReached) return
 
-      // Check rate limit from local storage
       const lastSent = localStorage.getItem('lastSent')
       const emailCount = parseInt(localStorage.getItem('emailCount') || '0', 10)
       const now = Date.now()
-      const limitPeriod = 60 * 60 * 1000 // 1 hour limit
 
-      if (lastSent && now - lastSent < limitPeriod) {
-        this.isRateLimited = true
-        return
+      // Réinitialisation si la période de 12 heures est passée
+      if (!lastSent || now - lastSent >= this.limitPeriod) {
+        localStorage.setItem('emailCount', '0')
+        localStorage.setItem('lastSent', now)
       }
 
       if (emailCount >= this.maxEmails) {
@@ -102,7 +125,6 @@ export default {
 
       this.loading = true
 
-      // Prepare data for EmailJS
       const templateParams = {
         from_name: `${this.name} ${this.surname}`,
         from_email: this.email,
@@ -111,7 +133,6 @@ export default {
       }
 
       try {
-        // Send message via EmailJS
         await emailjs.send(
           'service_5rxb8oc',
           'template_rkfs64i',
@@ -120,7 +141,6 @@ export default {
         )
         this.statusMessage = 'Votre message a été envoyé avec succès !'
         this.resetForm()
-        localStorage.setItem('lastSent', now)
         localStorage.setItem('emailCount', (emailCount + 1).toString())
         this.checkEmailLimits()
       } catch (error) {
