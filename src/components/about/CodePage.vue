@@ -106,7 +106,7 @@ export default defineComponent({
           description:
             "Durant mon année de césure (2023-2024) en Laponie Suédoise, j'ai développé une application web pour gérer les chiens et les traineaux de l'élevage. <br/> Avec cette application les utilisateurs peuvent avoir des informations sur les chiens, en ajouter, les modifier et les supprimer. Ils peuvent aussi créer différents traineaux en fonction de leurs poids, aisance avec les chiens et leurs envie de vitesse. Les traineaux sont créés de façon à ce que les chiens qui ne s'entendent pas ne soient pas ensemble.",
           logo: MakeMySledge,
-          link: ''
+          link: 'https://make-my-sledge.web.app'
         },
         {
           title: 'Mémoire de Master',
@@ -118,9 +118,9 @@ export default defineComponent({
           link: 'https://drive.google.com/file/d/1au23CZIKtarVc0ihUrF9bREZKCT2iRyd/view?usp=sharing'
         },
         {
-          title: 'Website volunteering',
+          title: 'Site de Volontariat',
           langage: 'Vue.js',
-          name: 'Volnteering Farm Backsjon',
+          name: 'Volntariat Ferme Backsjon',
           description:
             "Pour recruter de nouveaux volontaires dans la ferme Backsjön au nord de la Suède, j'ai créé un site web en m'appuyant sur Vue.js. <br/> Ce site permet aux utilisateurs de découvrir la ferme, les activités proposées, les animaux et les valeurs de la ferme. Ils peuvent aussi s'inscrire pour devenir volontaire en fonction des dates voulues et des places disponibles, et participer à la vie de la ferme. <br/> Ce site n'est pas en ligne pour cause de malentendu avec les propriétaires",
           logo: Backsjon,
