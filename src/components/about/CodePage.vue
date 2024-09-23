@@ -45,38 +45,19 @@
           >.
         </h5>
       </div>
-      <h4 class="px-4">
-        Voici une liste de langages supplémentaires que j'ai appris durant mon cursus :
-      </h4>
-      <div id="langages" class="row d-flex justify-content-center pb-0 mb-4">
-        <div class="col-4">
-          <ul>
-            <li>
-              <a
-                id="html-css"
-                href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-                target="_blank"
-                >HTML/CSS</a
-              >
-            </li>
-            <li><a id="php" href="https://www.php.net" target="_blank">PHP</a></li>
-            <li><a id="java" href="https://www.java.com" target="_blank">Java</a></li>
-          </ul>
-        </div>
-        <div class="col-4">
-          <ul>
-            <li>
-              <a id="SQL" href="https://www.iso.org/standard/63555.html" target="_blank">SQL</a>
-            </li>
-            <li><a id="c" href="https://www.iso.org/standard/74528.html" target="_blank">C</a></li>
-            <li><a id="haskell" href="https://www.haskell.org" target="_blank">Haskell</a></li>
-          </ul>
-        </div>
-        <div class="col-4">
-          <ul>
-            <li><a id="r" href="https://www.r-project.org" target="_blank">R</a></li>
-            <li><a id="coq" href="https://coq.inria.fr" target="_blank">Coq</a></li>
-          </ul>
+      <div class="container py-5">
+        <h4 class="text-center mb-4">
+          Voici une liste de langages supplémentaires que j'ai appris durant mon cursus :
+        </h4>
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-4">
+          <LanguageCard
+            v-for="(langage, index) in langages"
+            :key="index"
+            :id="langage.id"
+            :image="langage.image"
+            :title="langage.title"
+            :link="langage.link"
+          />
         </div>
       </div>
     </div>
@@ -85,17 +66,46 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import LanguageCard from './LanguageCard.vue'
 
 import MakeMySledge from '@/assets/images/makemysledge.png'
+import SlidesMap from '@/assets/images/slides-map.png'
 import Backsjon from '@/assets/images/backsjon.png'
 import BubbleCursor from '@/assets/images/bubble-cursor.gif'
 import AoC from '@/assets/images/aoc.jpg'
 import DarkPatterns from '@/assets/images/dark-pattern.png'
 import Flower from '@/assets/images/flower.avif'
 import Bot from '@/assets/images/bot.png'
+import PythonImage from '@/assets/images/logos/python.png'
+import DjangoImage from '@/assets/images/logos/django.png'
+import FlaskImage from '@/assets/images/logos/flask.png'
+import HTMLCSSJSImage from '@/assets/images/logos/html-css-js.png'
+import VueImage from '@/assets/images/logos/vue.png'
+import ReactImage from '@/assets/images/logos/react.png'
+import ReactNativeImage from '@/assets/images/logos/react-native.png'
+import AngularImage from '@/assets/images/logos/angular.png'
+import CImage from '@/assets/images/logos/c.png'
+import CoqImage from '@/assets/images/logos/coq.png'
+import FlutterImage from '@/assets/images/logos/flutter.png'
+import GitHubImage from '@/assets/images/logos/github.png'
+import GitLabImage from '@/assets/images/logos/gitlab.png'
+import HaskellImage from '@/assets/images/logos/haskell.png'
+import JavaImage from '@/assets/images/logos/java.png'
+import KotlinImage from '@/assets/images/logos/kotlin.png'
+import PHPImage from '@/assets/images/logos/php.png'
+import RImage from '@/assets/images/logos/r.png'
+import SQLImage from '@/assets/images/logos/sql.png'
+import TypeScriptImage from '@/assets/images/logos/typescript.png'
+import NodeImage from '@/assets/images/logos/node.png'
+import Bootstrap from '@/assets/images/logos/bootstrap.png'
+import DockerImage from '@/assets/images/logos/docker.png'
+import LinuxImage from '@/assets/images/logos/linux.png'
 
 export default defineComponent({
   name: 'CodePage',
+  components: {
+    LanguageCard
+  },
   data() {
     return {
       projects: [
@@ -116,6 +126,15 @@ export default defineComponent({
             "Pour mon mémoire de Master, j'ai étudié l'influence des Dark Patterns sur les utilisateurs. <br/> Les Dark Patterns sont des techniques de conception qui poussent les utilisateurs à prendre des décisions qu'ils n'auraient pas prises autrement. J'ai étudié l'impact de ces techniques sur les utilisateurs, leur perception et leur confiance envers les sites web.",
           logo: DarkPatterns,
           link: 'https://drive.google.com/file/d/1au23CZIKtarVc0ihUrF9bREZKCT2iRyd/view?usp=sharing'
+        },
+        {
+          title: 'Slides Map',
+          langage: 'ReactNative',
+          name: 'Application mobile de Toboggans',
+          description:
+            "J'ai créé une application mobile pour trouver les toboggans les plus proches de chez soi. <br/> Cette application permet aux utilisateurs de trouver les toboggans autour d'eux, de voir leurs niveaux d'amusement, de les noter et de les commenter. Ils peuvent aussi ajouter de nouveaux toboggans et les partager avec la communauté. <br/> Cette application n'est pas en ligne car elle est encore en développement.",
+          logo: SlidesMap,
+          link: 'https://github.com/Hipp01/slides-map'
         },
         {
           title: 'Site de Volontariat',
@@ -162,6 +181,74 @@ export default defineComponent({
           logo: Bot,
           link: 'https://github.com/Hipp01/bot-discord'
         }
+      ],
+      langages: [
+        { id: 'vuejs', image: VueImage, title: 'Vue JS', link: 'https://vuejs.org/' },
+        { id: 'react', image: ReactImage, title: 'React', link: 'https://reactjs.org/' },
+        { id: 'node', image: NodeImage, title: 'Node', link: 'https://nodejs.org/' },
+        {
+          id: 'typescript',
+          image: TypeScriptImage,
+          title: 'TypeScript',
+          link: 'https://www.typescriptlang.org/'
+        },
+
+        { id: 'angular', image: AngularImage, title: 'Angular', link: 'https://angular.io/' },
+        {
+          id: 'react-native',
+          image: ReactNativeImage,
+          title: 'React Native',
+          link: 'https://reactnative.dev/'
+        },
+        { id: 'kotlin', image: KotlinImage, title: 'Kotlin', link: 'https://kotlinlang.org' },
+        { id: 'flutter', image: FlutterImage, title: 'Flutter', link: 'https://flutter.dev/' },
+        { id: 'php', image: PHPImage, title: 'PHP', link: 'https://www.php.net/' },
+        { id: 'python', image: PythonImage, title: 'Python', link: 'https://www.python.org' },
+        {
+          id: 'django',
+          image: DjangoImage,
+          title: 'Django',
+          link: 'https://www.djangoproject.com/'
+        },
+        {
+          id: 'flask',
+          image: FlaskImage,
+          title: 'Flask',
+          link: 'https://flask.palletsprojects.com/'
+        },
+        {
+          id: 'docker',
+          image: DockerImage,
+          title: 'Docker',
+          link: 'https://www.docker.com/'
+        },
+        { id: 'github', image: GitHubImage, title: 'GitHub', link: 'https://github.com/' },
+        { id: 'gitlab', image: GitLabImage, title: 'GitLab', link: 'https://about.gitlab.com/' },
+        { id: 'sql', image: SQLImage, title: 'SQL', link: 'https://en.wikipedia.org/wiki/SQL' },
+        {
+          id: 'html-css-js',
+          image: HTMLCSSJSImage,
+          title: 'HTML + CSS + JS',
+          link: 'https://developer.mozilla.org/en-US/docs/Web/HTML'
+        },
+        {
+          id: 'bootstrap',
+          image: Bootstrap,
+          title: 'Bootstrap',
+          link: 'https://getbootstrap.com/'
+        },
+        { id: 'linux', image: LinuxImage, title: 'Linux', link: 'https://www.linux.org/' },
+        {
+          id: 'c',
+          image: CImage,
+          title: 'C',
+          link: 'https://en.wikipedia.org/wiki/C_(programming_language)'
+        },
+        { id: 'coq', image: CoqImage, title: 'Coq', link: 'https://coq.inria.fr/' },
+
+        { id: 'haskell', image: HaskellImage, title: 'Haskell', link: 'https://www.haskell.org/' },
+        { id: 'r', image: RImage, title: 'R', link: 'https://www.r-project.org/' },
+        { id: 'java', image: JavaImage, title: 'Java', link: 'https://www.java.com/' }
       ]
     }
   }
