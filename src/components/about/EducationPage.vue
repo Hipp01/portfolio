@@ -8,29 +8,156 @@
         accessibles à tous, en aidant chaque élève à développer une compréhension profonde et
         durable.
       </p>
-      <h5 class="my-4">Matières enseignées :</h5>
-      <ul class="subject-list text-start">
-        <li>
-          <strong>Mathématiques :</strong> du calcul élémentaire aux équations différentielles.
-        </li>
-        <li>
-          <strong>Physique :</strong> de la mécanique classique à l'électricité et au magnétisme.
-        </li>
-        <li><strong>Chimie :</strong> de la chimie organique aux réactions chimiques avancées.</li>
-        <li>
-          <strong>Sciences de l'ingénieur :</strong> initiation aux systèmes mécaniques et
-          électroniques.
-        </li>
-        <li><strong>Informatique :</strong> algorithmes, programmation, et bases de données.</li>
-      </ul>
-
-      <h5 class="my-4">Niveaux scolaires :</h5>
-      <ul class="levels-list text-start">
-        <li>Primaire</li>
-        <li>Collège</li>
-        <li>Lycée (de la seconde à la terminale)</li>
-        <li>Écoles d'ingénieur, d'informatique ou licence (informatique)</li>
-      </ul>
+      <h3 class="my-4">Matières enseignées :</h3>
+      <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-2 g-md-4">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <img
+                src="../../assets/images/education/informatique.png"
+                alt="Informatique"
+                class="card-img-top img-fluid"
+              />
+              <h5 class="card-title mt-3">Informatique</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <img
+                src="../../assets/images/education/mathematics.png"
+                alt="Mathématiques"
+                class="card-img-top img-fluid"
+              />
+              <h5 class="card-title mt-3">Mathématiques</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <img
+                src="../../assets/images/education/electronique.png"
+                alt="Electronique"
+                class="card-img-top img-fluid"
+              />
+              <h5 class="card-title mt-3">Électronique</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <img
+                src="../../assets/images/education/physics.png"
+                alt="Physique"
+                class="card-img-top img-fluid"
+              />
+              <h5 class="card-title mt-3">Physique</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <img
+                src="../../assets/images/education/mechanic.png"
+                alt="Mécanique"
+                class="card-img-top img-fluid"
+              />
+              <h5 class="card-title mt-3">Mécanique</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <img
+                src="../../assets/images/education/chimie.png"
+                alt="Chimie"
+                class="card-img-top img-fluid"
+              />
+              <h5 class="card-title mt-3">Chimie</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <img
+                src="../../assets/images/education/SI.png"
+                alt="Sciences de l'ingénieur"
+                class="card-img-top img-fluid"
+              />
+              <h5 class="card-title mt-3">Sciences de l'ingénieur</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <img
+                src="../../assets/images/education/algo.png"
+                alt="Algorithmie"
+                class="card-img-top img-fluid"
+              />
+              <h5 class="card-title mt-3">Algorithmie</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3 class="my-4">Niveaux scolaires :</h3>
+      <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-4">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <img
+                src="../../assets/images/education/primaire.jpg"
+                alt="Primaire"
+                class="card-img-top img-fluid rounded"
+              />
+              <h5 class="card-title mt-3">Primaire</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <img
+                src="../../assets/images/education/college.png"
+                alt="Collège"
+                class="card-img-top img-fluid rounded"
+              />
+              <h5 class="card-title mt-3">Collège</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <img
+                src="../../assets/images/education/lycee.png"
+                alt="Lycée"
+                class="card-img-top img-fluid rounded"
+              />
+              <h5 class="card-title mt-3">Lycée</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <img
+                src="../../assets/images/education/universite.png"
+                alt="Université"
+                class="card-img-top img-fluid rounded"
+              />
+              <h5 class="card-title mt-3">Université</h5>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div class="mt-5">
         <h5 class="my-4 d-flex justify-content-center">Méthodes d'enseignement :</h5>
@@ -88,6 +215,12 @@ export default defineComponent({
 .subject-list,
 .levels-list {
   margin-left: 20px;
+}
+
+.card {
+  border-radius: 10px;
+  background-color: #0a3a71;
+  color: white;
 }
 
 @media (max-width: 768px) {

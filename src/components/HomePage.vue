@@ -120,7 +120,7 @@
             </div>
           </div>
         </div>
-        <p class="text-light click">Cliquez sur les bulles pour en savoir plus !</p>
+        <p class="text-light click mt-5">Cliquez sur les bulles pour en savoir plus !</p>
       </div>
     </div>
   </div>

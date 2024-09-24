@@ -25,7 +25,9 @@
             >
               <img :src="project.logo" :alt="project.name" class="project-logo me-md-0 me-3" />
               <div class="d-flex flex-column align-items-start ms-md-0 ms-3 mt-md-2">
-                <h5 class="text-info mb-2 project-title">{{ project.title }}</h5>
+                <h5 class="mb-2 project-title">
+                  <strong>{{ project.title }}</strong>
+                </h5>
                 <p class="project-langage mb-0">#{{ project.langage }}</p>
               </div>
             </a>
@@ -47,7 +49,8 @@
       </div>
       <div class="container py-5">
         <h4 class="text-center mb-4">
-          Voici une liste de langages supplémentaires que j'ai appris durant mon cursus :
+          Voici une liste de langages et technologies supplémentaires que j'ai appris durant mon
+          cursus :
         </h4>
         <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-4">
           <LanguageCard
@@ -332,9 +335,9 @@ a {
 }
 
 .project-title {
-  font-size: 1.3rem;
-  color: #61dafb;
-  text-align: left;
+  font-size: 1.25rem;
+  color: #e0e0e0;
+  text-align: start;
 }
 .project-logo {
   width: 100px;
@@ -369,7 +372,7 @@ a {
 
 .project-langage {
   font-size: 1.1rem;
-  color: aquamarine;
+  color: #61dafb;
 }
 
 #langages {
