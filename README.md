@@ -50,5 +50,7 @@ Vous pouvez consulter la version en ligne de mon portfolio ici : [Portfolio Hipp
 Si vous souhaitez me contacter pour une opportunité professionnelle, des collaborations ou toute autre question, n'hésitez pas à me contacter via :
 
 Email : [hippolarzul@gmail.com](mailto:hippolarzul@gmail.com)
+
 LinkedIn : [Hippolyte Larzul](https://www.linkedin.com/in/%F0%9F%A7%91%E2%80%8D%F0%9F%92%BB-hippolyte-larzul-b34250200/)
+
 GitHub : [Hipp01](https://github.com/Hipp01/)
