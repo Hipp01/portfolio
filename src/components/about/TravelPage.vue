@@ -222,7 +222,7 @@
         </ul>
       </div>
       <div id="gap-year" class="my-5">
-        <h3 class="my-4 d-flex justify-content-center">Mon année sabbatique en 2023 - 2024 :</h3>
+        <h3 class="my-4 d-flex justify-content-center">Mon année de voyage en 2023 - 2024 :</h3>
         <p class="text-start">
           Après avoir obtenu mon Master en E-Services en 2023, j'ai décidé de prendre mon sac à dos
           et de visiter les pays scandinaves desquels je suis tombé amoureux. <br />
@@ -258,7 +258,7 @@
           couper le souffle. Entre Fjörds, montagnes, lacs, et mer, j'ai pu découvrir des paysages
           magnifiques et des villes pleines de charme et de vie.
         </p>
-        <div class="div-images p-2 rounded bg-info">
+        <div class="div-images p-2 rounded">
           <div class="d-flex align-items-center justify-content-center mt-2 pb-1">
             <img :src="travel1" alt="midsummer" class="img-fixed mx-2 rounded" />
             <img :src="travel2" alt="ice" class="img-fixed mx-2 rounded" />
@@ -385,6 +385,10 @@ export default defineComponent({
   width: 250px;
   height: 250px;
   object-fit: cover;
+}
+
+.div-images {
+  background-color: #0a3a71;
 }
 
 @media (max-width: 768px) {

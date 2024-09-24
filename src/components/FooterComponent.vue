@@ -1,9 +1,11 @@
 <template>
   <footer>
     <div class="footer-container">
-      <button class="back-button pt-1" @click="goBack">
-        <i class="fas fa-arrow-left"></i>
-      </button>
+      <div v-if="this.$route.path !== '/'">
+        <button class="back-button pt-1" @click="goBack">
+          <i class="fas fa-arrow-left"></i>
+        </button>
+      </div>
       <div class="footer-content">
         <span class="mx-4">&copy; 2024 Portfolio de Hippolyte Larzul. Tous droits réservés.</span>
       </div>
