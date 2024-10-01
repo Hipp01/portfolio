@@ -26,14 +26,28 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
 
+      - name: Cache node_modules
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
       - name: Install dependencies
-        run: npm install --legacy-peer-deps
+        run: npm ci
 
       - name: Install Firebase CLI
         run: npm install -g firebase-tools
 
+      - name: Verify Node.js and Firebase versions
+        run: |
+          node -v
+          firebase --version
+
       - name: Build project
         run: npm run build
 
-      - name: Deploy to Firebase
+      - name: Deploy to Firebase Hosting
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
         run: firebase deploy --only hosting --token ${{ secrets.FIREBASE_TOKEN }}
