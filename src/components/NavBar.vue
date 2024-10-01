@@ -108,14 +108,9 @@
 import { defineComponent, ref, watch } from 'vue'
 import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
-import CountryFlag from 'vue-country-flag'
 
 export default defineComponent({
   name: 'NavBar',
-  components: {
-    // eslint-disable-next-line vue/no-unused-components
-    CountryFlag
-  },
   setup() {
     const isNavbarOpen = ref(false)
     const router = useRouter()
