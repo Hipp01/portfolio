@@ -1,0 +1,304 @@
+{
+  "Navbar": {
+    "home": "Accueil",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "Home": {
+    "title": "Développeur Full Stack",
+    "more": "Cliquez sur les bulles pour en savoir plus !"
+  },
+  "Footer": "Fait avec ❤️ par Hippolyte Larzul. Tous droits réservés.",
+  "Contact": {
+    "title": "Un projet, une question, un besoin ?",
+    "contact-me": "Contactez-moi !",
+    "Form": {
+      "name": "Nom",
+      "surname": "Prénom",
+      "email": "Email",
+      "subject": "Sujet",
+      "Subject": {
+        "select": "Sélectionnez un sujet",
+        "computer-science": "Informatique",
+        "climbing": "Escalade",
+        "education": "Éducation",
+        "other": "Autre"
+      },
+      "message": "Message",
+      "loading": "Envoi en cours...",
+      "send": "Envoyer le message",
+      "limit": "Vous avez atteint la limite d'envoi pour cette période. Essayez plus tard.",
+      "max-reached": "Vous avez atteint la limite maximale d'envoi de messages.",
+      "success": "Votre message a été envoyé avec succès !",
+      "error": "Erreur lors de l'envoi du message:",
+      "status-error": "Une erreur est survenue, veuillez réessayer plus tard."
+    }
+  },
+  "Mobile": {
+    "title": "Mon parcours dans le développement d'Applications Mobiles",
+    "description": "Depuis 2021 et durant mon Master en E-Services, je me suis passionné par le développement d'applications mobiles en utilisant diverses technologies telles que",
+    "projects-did": "Voici quelques projets sur lesquels j'ai travaillé :",
+    "Projects": {
+      "Cryptac": {
+        "title": "Cryptac",
+        "name": "Application de Suivi des Cryptomonnaies",
+        "description": "Cryptac est une application créée avec Kotlin pour suivre les cryptomonnaies. Cette application permet aux utilisateurs de consulter les prix des cryptomonnaies, les pourcentages d'évolution, ainsi que des descriptions détaillées. Les utilisateurs peuvent également ajouter leurs cryptomonnaies favorites à une liste de suivi pour un accès plus facile."
+      },
+      "SpacePics": {
+        "title": "SpacePics",
+        "name": "Application d'Images de l'Espace",
+        "description": "SpacePics a été développé avec Flutter, il s'agit  d'une application qui affiche quotidiennement des images de la NASA, accompagnées de descriptions. L'application comprend une fonctionnalité de traduction en français, rendant les informations accessibles à un plus large public."
+      },
+      "BDB": {
+        "title": "Bou'D'Brousse",
+        "name": "Application de Gestion pour un Club d'Escalade",
+        "description": "Mon premier projet majeur était une application pour mon club d'escalade. Cette application gère les adhérents du club et leur permet de valider leurs entrées en fonction de leurs créneaux horaires autorisés. L'application a été développée avec ReactNative, et l'API avec Node.js, offrant une expérience utilisateur fluide sur Android et iOS."
+      },
+      "YouHunt": {
+        "title": "YouHunt",
+        "name": "Application de Chasse au Trésor en Réalité",
+        "description": "Pour mon projet de fin de Master, j'ai créé une application qui permet de concevoir et de participer à des chasses au trésor dans la vie réelle. Chaque lieu atteint est associé à des questions, un système de points, et d'autres fonctionnalités engageantes, rendant l'expérience interactive et amusante."
+      }
+    },
+    "projects-more": "Pour consulter mes autres projets, dans le développement en général, vous pouvez regarder",
+    "this-page": "cette page"
+  },
+  "Projects": {
+    "title": "Mon Parcours dans la Programmation",
+    "description": "Depuis que j'ai commencé mon parcours dans la programmation, j'ai exploré diverses technologies et langages de programmation tels que",
+    "projects-did": "Voici quelques projets sur lesquels j'ai travaillé :",
+    "Projects": {
+      "MMS": {
+        "title": "Make My Sledge",
+        "name": "Application web de gestion de chiens de traineau",
+        "description": "Durant mon année de césure (2023-2024) en Laponie Suédoise, j'ai développé une application web pour gérer les chiens et les traineaux de l'élevage. <br/> Avec cette application les utilisateurs peuvent avoir des informations sur les chiens, en ajouter, les modifier et les supprimer. Ils peuvent aussi créer différents traineaux en fonction de leurs poids, aisance avec les chiens et leurs envie de vitesse. Les traineaux sont créés de façon à ce que les chiens qui ne s'entendent pas ne soient pas ensemble."
+      },
+      "Memoire": {
+        "title": "Mémoire de Master",
+        "name": "L'influence des Dark Patterns sur les utilisateurs",
+        "description": "Pour mon mémoire de Master, j'ai étudié l'influence des Dark Patterns sur les utilisateurs. <br/> Les Dark Patterns sont des techniques de conception qui poussent les utilisateurs à prendre des décisions qu'ils n'auraient pas prises autrement. J'ai étudié l'impact de ces techniques sur les utilisateurs, leur perception et leur confiance envers les sites web."
+      },
+      "SlidesMap": {
+        "title": "Slides Map",
+        "name": "Application mobile de Toboggans",
+        "description": "J'ai créé une application mobile pour trouver les toboggans les plus proches de chez soi. <br/> Cette application permet aux utilisateurs de trouver les toboggans autour d'eux, de voir leurs niveaux d'amusement, de les noter et de les commenter. Ils peuvent aussi ajouter de nouveaux toboggans et les partager avec la communauté. <br/> Cette application n'est pas en ligne car elle est encore en développement."
+      },
+      "Volunteering": {
+        "title": "Site de Volontariat",
+        "name": "Volntariat Ferme Backsjon",
+        "description": "Pour recruter de nouveaux volontaires dans la ferme Backsjön au nord de la Suède, j'ai créé un site web en m'appuyant sur Vue.js. <br/> Ce site permet aux utilisateurs de découvrir la ferme, les activités proposées, les animaux et les valeurs de la ferme. Ils peuvent aussi s'inscrire pour devenir volontaire en fonction des dates voulues et des places disponibles, et participer à la vie de la ferme. <br/> Ce site n'est pas en ligne pour cause de malentendu avec les propriétaires."
+      },
+      "BubbleCursor": {
+        "title": "Bubble Cursor",
+        "name": "Expérience Interface Interactions Homme-Machine",
+        "description": "Dans le cadre de mon Master, j'ai développé une expérience d'interface homme-machine pour étudier l'inmpact de la forme et la taille de différents curseurs de pointage sur la vitesse et la précision des utilisateurs. <br/> Cette expérience a été développée en Python avec la librairie PyQt5 et a été testée sur plusieurs participants. Le but était de voir si un curseur différent pouvait améliorer la vitesse et la précision des utilisateurs, sur différentes tailles de cibles."
+      },
+      "AoC": {
+        "title": "Advent of Code",
+        "name": "Calendrier de l'avent du code",
+        "description": "Chaque année, je participe à l'évènement \"Advent of Code\" qui consiste à résoudre des problèmes de programmation chaque jour du mois de décembre. <br/> Cela me permet de découvrir de nouveaux problèmes, de nouvelles façons de coder et de m'améliorer en programmation. <br/> Vous pouvez retrouver mes solutions sur mon <a href=https://github.com/Hipp01/AoC target=\"_blank\" class='text-white'\">GitHub</a>."
+      },
+      "Flower": {
+        "title": "Mesure électrique Flower",
+        "name": "Analyse de la consommation électrique de la bibliothèque Flower",
+        "description": "Dans le cadre de mon Master, j'ai réalisé une étude sur la consommation électrique de la bibliothèque d'apprentissage fédéré Flower. <br/> J'ai analysé les données de consommation électrique de la bibliothèque pour comprendre les habitudes des utilisateurs, les périodes de pointe et les périodes creuses. J'ai ensuite proposé des solutions pour réduire la consommation électrique et améliorer l'efficacité énergétique de la bibliothèque."
+      },
+      "Discord": {
+        "title": "Bot Discord",
+        "name": "Bot Discord pour des jeux interactifs",
+        "description": "J'ai créé un Bot Discord qui permet de jouer seul ou à plusieurs à des jeux interactifs. <br/> Ce Bot propose différents jeux comme la bateille navale, le pendu, le morpion, le devine le nombre... Les utilisateurs peuvent jouer entre eux ou contre le Bot, et gagner des points en fonction de leurs performances."
+      }
+    },
+    "projects-more": "Pour consulter mes autres projets, dans le développement mobile, vous pouvez regarder",
+    "this-page": "cette page",
+    "list-languages": "Voici une liste de langages et technologies supplémentaires que j'ai appris durant mon cursus"
+  },
+  "Climbing": {
+    "title": "Ma passion : l'Escalade",
+    "description": "Après avoir testé plusieurs sports comme le tennis, le basket, le judo, l'athlétisme ou le handball, je me suis tourné en 2011 vers l'escalade qui est devenue une passion qui me pousse à dépasser mes limites. Que ce soit en salle, sur des blocs, ou en falaise, j'ai développé une véritable passion pour cette discipline exigeante qui combine force, agilité, souplesse et mental.",
+    "achievements": "Voici quelques photos de mes réalisations en escalade :",
+    "Photos": {
+      "1": {
+        "title": "Compétition d'escalade en Salle",
+        "description": "Compétition de bloc à Villeneuve d'Ascq, où j'ai terminé 3e en 2021."
+      },
+      "2": {
+        "title": "Escalade de vitesse",
+        "description": "Jeux Européens Universitaires 2022, où j'ai terminé 3e en vitesse."
+      },
+      "3": {
+        "title": "Escalade en Voie",
+        "description": "Jeux Européens Universitaires 2022, finale de difficulté"
+      },
+      "4": {
+        "title": "Podium jeux européens",
+        "description": "Podium des jeux européens universitaires 2022, l'équipe de Lille devant celle du Royaume-Uni et l'Autriche."
+      }
+    },
+    "palmares": "Voici quelques-uns de mes résultats en compétition :",
+    "Results": {
+      "1": "1er aux Jeux Européens Universitaires en équipe en 2022",
+      "2": "3e aux Jeux Européens Universitaires en vitesse en 2022",
+      "3": "Champion Régional en 2020",
+      "4": "Champion Départemental en 2020, 2019, 2018, 2017, 2016, 2015, 2014"
+    },
+    "Cliff": {
+      "title": "Escalade en falaise :",
+      "description": "J'ai eu l'occasion de grimper sur plusieurs sites naturels en France, en Belgique et en Grèce. J'ai fait de magnifiques voies dans le Briançonnais, à St Léger du Ventoux, à Fontainebleau, à Freyr en Belgique, à Kalymnos en Grèce, et bien d'autres encore. J'ai réussi à atteindre le niveau 8a en falaise."
+    },
+    "routesetter": "Je suis aussi ouvreur en compétitions et en salles privées depuis 2018, pour plus d'informations, vous pouvez consulter",
+    "this-page": "cette page"
+  },
+  "Routesetting": {
+    "title": "L'Ouverture en Escalade",
+    "description": "L'ouverture en escalade est une discipline qui demande non seulement des compétences techniques, mais aussi une grande créativité. Depuis 2018, j'ai eu l'occasion d'ouvrir des voies et blocs en compétition et en salles privées, apportant ma touche personnelle à chaque création.",
+    "achievements": "Voici quelques photos de mes créations en ouverture :",
+    "Photos": {
+      "1": {
+        "title": "Ouverture Bloc en Compétition",
+        "description": "Pour les championnats départementaux ou régionaux, nous créons des blocs variés pour petits et grands."
+      },
+      "2": {
+        "title": "Ouverture en Club",
+        "description": "Depuis que je grimpe, j'ai toujours ouvert bénévolement pour mon club, pour le plaisir de partager ma passion."
+      },
+      "3": {
+        "title": "Ouverture de Voie en Compétition",
+        "description": "J'ai passé ma formation d'ouvreur en 2018 et depuis j'ouvre régulièrement pour des compétitions départementales et régionales."
+      },
+      "4": {
+        "title": "Ouverture en salle privées",
+        "description": "J'ai eu l'occasion d'ouvrir pour des salles privées, comme Climb Up, Vertical'Art ou Dock79. Des blocs variés de débutant à expert."
+      }
+    },
+    "experience": "Quelques expériences marquantes :",
+    "notableExperiences": {
+      "1": "Ouverture pour le Championnat Régional 2023",
+      "2": "Ouverture en salle privée depuis 2018",
+      "3": "Formation d'ouvreur en 2018",
+      "4": "Ouverture pour le championnat départemental et régional combiné jeunes 2022"
+    },
+    "philosophy": "Ma Philosophie d'Ouverture :",
+    "philosophyDescription": "L'ouverture est pour moi une manière de repousser les limites, non seulement des grimpeurs, mais aussi les miennes en tant qu'ouvreur. J'aime créer des voies qui ne sont pas simplement des challenges physiques, mais aussi des puzzles mentaux.",
+    "contact": "Pour plus d'informations ou pour discuter de projets d'ouverture, vous pouvez me contacter directement",
+    "climbing": "Je grimpe depuis 2011, pour plus d'informations sur mon parcours en escalade, vous pouvez consulter",
+    "here": "ici",
+    "this-page": "cette page"
+  },
+  "Travel": {
+    "title": "Mes voyages",
+    "description": "Voyager est une façon pour moi de découvrir de nouvelles cultures, d'explorer des paysages magnifiques, et de rencontrer des personnes inspirantes. Que ce soit pour un court séjour ou une aventure de plusieurs mois, chaque voyage m'apporte une richesse d'expériences qui marquent ma vie de manière profonde.",
+    "photosTitle": "Voici quelques photos de mes voyages :",
+    "Carousel": {
+      "1": {
+        "title": "Voyage à Lodz, Pologne",
+        "description": "Compétition européenne à Lodz en Pologne en 2022.",
+        "alt": "Voyage à Lodz, Pologne"
+      },
+      "2": {
+        "title": "Week-end à Bruxelles",
+        "description": "Découverte de la capitale belge et de ses spécialités culinaires.",
+        "alt": "Week-end à Bruxelles"
+      },
+      "3": {
+        "title": "Séjour à Lisbonne, Portugal",
+        "description": "Visite des quartiers historiques, des monuments et des spécialités culinaires portugaises.",
+        "alt": "Séjour à Lisbonne, Portugal"
+      },
+      "4": {
+        "title": "Week-end à Paris",
+        "description": "Découverte de la capitale française et de ses monuments emblématiques.",
+        "alt": "Week-end à Paris"
+      },
+      "5": {
+        "title": "Séjour à Budapest, Hongrie",
+        "description": "Exploration des bains thermaux et des ruelles médiévales de la ville.",
+        "alt": "Séjour à Budapest, Hongrie"
+      },
+      "6": {
+        "title": "Séjour à Stockholm, Suède",
+        "description": "Découverte de la capitale suédoise et de ses musées d'histoire.",
+        "alt": "Séjour à Stockholm, Suède"
+      },
+      "7": {
+        "title": "Week-end à Helsinki, Finlande",
+        "description": "Après avoir passé 2 mois en Finlande pour du bénévolat, il fallait bien visiter la capitale et son marché de Noël.",
+        "alt": "Week-end à Helsinki, Finlande"
+      },
+      "8": {
+        "title": "Aurores boréales en Laponie",
+        "description": "Volontariat en Laponie Suédoise, dans une ferme à chiens de traîneau, avec des aurores boréales en prime.",
+        "alt": "Aurores boréales en Laponie"
+      },
+      "9": {
+        "title": "Week-end à Bergen, Norvège",
+        "description": "Découverte de la ville de Bergen, entourée de fjords et de montagnes.",
+        "alt": "Week-end à Bergen, Norvège"
+      },
+      "10": {
+        "title": "Week-end à Copenhague, Danemark",
+        "description": "Découverte de la capitale danoise, entre canaux et vélos.",
+        "alt": "Week-end à Copenhague, Danemark"
+      },
+      "prev": "Précédent",
+      "next": "Suivant"
+    },
+    "destinationsTitle": "Quelques-unes de mes destinations favorites :",
+    "Destinations": {
+      "1": {
+        "name": "Stockholm",
+        "description": "Suède. Une ville magnifique en hiver comme en été, pleine d'histoire et de culture. Pour moi la plus belle ville du monde."
+      },
+      "2": {
+        "name": "La Suède",
+        "description": "de la Laponie à Malmö. Un pays magnifique, avec des paysages variés et une nature préservée. J'y ai vécu pendant 8 mois tout en voyageant pour découvrir la culture, les paysages et les traditions."
+      },
+      "3": {
+        "name": "Bergen",
+        "description": "Norvège. Une ville dans un Fjörd Norvégien, une source d'air au bord de l'eau, entourée de montagnes."
+      },
+      "4": {
+        "name": "Copenhague",
+        "description": "Danemark. Une ville pleine de charme, avec ses canaux, ses spécialités culinaires et ses vélos."
+      },
+      "5": {
+        "name": "Budapest",
+        "description": "Hongrie. Une ville pleine de charme, avec ses bains thermaux et son architecture médiévale."
+      }
+    },
+    "gapYearTitle": "Mon année de voyage en 2023 - 2024 :",
+    "gapYearIntroduction": "Après avoir obtenu mon Master en E-Services en 2023, j'ai décidé de prendre mon sac à dos et de visiter les pays scandinaves desquels je suis tombé amoureux.",
+    "GapYearDetails": {
+      "finland": "J'ai commencé par la Finlande, le pays le plus heureux du monde. Pendant 2 mois j'ai vécu et aidé dans un élevage de malinois, avec des chevaux, poules, lapins, etc. J'ai pu découvrir la culture finlandaise, les saunas, les lacs et les forêts du pays de Noël.",
+      "swedenLapland": "Ensuite direction la Laponie Suédoise, pour un volontariat dans une ferme à chiens de traîneau. Durant la saison hivernale, j'ai pu entraîner les huskies, les nourrir, les soigner, et les aimer. J'ai aussi pu découvrir les aurores boréales, les rennes, les lacs gelés, et les forêts enneigées. Vivre sous -30°C est une expérience unique et inoubliable.",
+      "southSweden": "Enfin, je suis allé plus au sud de la Suède pour travailler dans une ferme autosuffisante avec des moutons, chevaux, poules, etc. J'ai pu découvrir la culture suédoise, les traditions, les paysages, et les spécialités culinaires. J'ai ainsi développé mes compétences en travail d'équipe, en autonomie et en organisation.",
+      "norwayDenmark": "J'ai aussi eu l'occasion de visiter la Norvège et le Danemark où les paysages sont à couper le souffle. Entre Fjörds, montagnes, lacs, et mer, j'ai pu découvrir des paysages magnifiques et des villes pleines de charme et de vie."
+    }
+  },
+  "Education": {
+    "title": "Enseignement en Ligne",
+    "description": "Je suis professeur particulier en ligne depuis 2022, j'accompagne des élèves de la primaire à la terminale dans les matières scientifiques. Mon objectif est de rendre ces matières accessibles à tous, en aidant chaque élève à développer une compréhension profonde et durable.",
+    "subjectsTitle": "Matières enseignées :",
+    "methodsTitle": "Méthodes d'enseignement :",
+    "methodsDescription": "J'adapte mes méthodes pédagogiques en fonction des besoins de chaque élève, en mettant l'accent sur la résolution de problèmes et l'apprentissage par l'exemple. Les cours se déroulent en ligne via des outils interactifs, permettant un suivi personnalisé et une communication efficace. Je propose également des exercices et des devoirs à réaliser entre les séances, pour renforcer les acquis et préparer les examens. Enfin, je suis disponible pour répondre à toutes les questions des élèves en dehors des cours, par e-mail ou messagerie instantanée.",
+    "levelsTitle": "Niveaux scolaires :",
+    "contactInfo": "Pour plus d'informations ou pour réserver un cours, veuillez consulter",
+    "contactLink": "cette page",
+    "Subjects": {
+      "computer": "Informatique",
+      "mathematics": "Mathématiques",
+      "electronics": "Électronique",
+      "physics": "Physique",
+      "mechanics": "Mécanique",
+      "chemistry": "Chimie",
+      "engineering": "Sciences de l'ingénieur",
+      "algorithm": "Algorithmie"
+    },
+    "Levels": {
+      "primary": "Primaire",
+      "middleSchool": "Collège",
+      "highSchool": "Lycée",
+      "university": "Université"
+    }
+  }
+}

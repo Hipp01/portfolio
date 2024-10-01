@@ -1,15 +1,11 @@
 <template>
   <div class="climb-passion">
     <div class="climb-container">
-      <h1 class="climb-title my-5">Ma passion : l'Escalade</h1>
+      <h1 class="climb-title my-5">{{ $t('Climbing.title') }}</h1>
       <p>
-        Après avoir testé plusieurs sports comme le tennis, le basket, le judo, l'athlétisme ou le
-        handball, je me suis tourné en 2011 vers l'escalade qui est devenue une passion qui me
-        pousse à dépasser mes limites. Que ce soit en salle, sur des blocs, ou en falaise, j'ai
-        développé une véritable passion pour cette discipline exigeante qui combine force, agilité,
-        souplesse et mental.
+        {{ $t('Climbing.description') }}
       </p>
-      <h5 class="my-4">Voici quelques photos de mes réalisations en escalade :</h5>
+      <h5 class="my-4">{{ $t('Climbing.achievements') }}</h5>
       <div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button
@@ -43,31 +39,30 @@
           <div class="carousel-item active">
             <img :src="climbing1" class="d-block w-100" alt="Compétition Villeneuve d'Ascq" />
             <div class="carousel-caption d-none d-md-block">
-              <h5>Compétition d'escalade en Salle</h5>
-              <p>Compétition de bloc à Villeneuve d'Ascq, où j'ai terminé 3e en 2021.</p>
+              <h5>{{ $t('Climbing.Photos.1.title') }}</h5>
+              <p>{{ $t('Climbing.Photos.1.description') }}</p>
             </div>
           </div>
           <div class="carousel-item">
             <img :src="climbing2" class="d-block w-100" alt="Escalade de vitesse" />
             <div class="carousel-caption d-none d-md-block">
-              <h5>Escalade de vitesse</h5>
-              <p>Jeux Européens Universitaires 2022, où j'ai terminé 3e en vitesse.</p>
+              <h5>{{ $t('Climbing.Photos.2.title') }}</h5>
+              <p>{{ $t('Climbing.Photos.2.description') }}</p>
             </div>
           </div>
           <div class="carousel-item">
             <img :src="climbing3" class="d-block w-100" alt="Escalade en voie" />
             <div class="carousel-caption d-none d-md-block">
-              <h5>Escalade en Voie</h5>
-              <p>Jeux Européens Universitaires 2022, finale de difficulté</p>
+              <h5>{{ $t('Climbing.Photos.3.title') }}</h5>
+              <p>{{ $t('Climbing.Photos.3.description') }}</p>
             </div>
           </div>
           <div class="carousel-item">
             <img :src="climbing4" class="d-block w-100" alt="podium" />
             <div class="carousel-caption d-none d-md-block">
-              <h5>Podium jeux européens</h5>
+              <h5>{{ $t('Climbing.Photos.4.title') }}</h5>
               <p>
-                Podium des jeux européens universitaires 2022, l'équipe de Lille devant celle du
-                Royaume-Uni et l'Autriche.
+                {{ $t('Climbing.Photos.4.description') }}
               </p>
             </div>
           </div>
@@ -93,29 +88,26 @@
       </div>
       <div id="palmares" class="my-5">
         <h5 class="my-4 d-flex justify-content-center">
-          Voici quelques-uns de mes palmarès en compétition :
+          {{ $t('Climbing.palmares') }}
         </h5>
         <ul class="text-start">
-          <li>1er aux Jeux Européens Universitaires en équipe en 2022</li>
-          <li>3e aux Jeux Européens Universitaires en Vitesse</li>
-          <li>Champion Régional en 2020</li>
-          <li>Champion Départemental en 2020, 2019, 2018, 2017, 2016, 2015, 2014</li>
+          <li>{{ $t('Climbing.Results.1') }}</li>
+          <li>{{ $t('Climbing.Results.2') }}</li>
+          <li>{{ $t('Climbing.Results.3') }}</li>
+          <li>{{ $t('Climbing.Results.4') }}</li>
         </ul>
       </div>
       <div id="falaise" class="my-5">
-        <h5 class="my-4 d-flex justify-content-center">Escalade en falaise :</h5>
+        <h5 class="my-4 d-flex justify-content-center">{{ $t('Climbing.Cliff.title') }}</h5>
         <p>
-          J'ai eu l'occasion de grimper sur plusieurs sites naturels en France, en Belgique et en
-          Grèce. J'ai fait de magnifiques voies dans le Briançonnais, à St Léger du Ventoux, à
-          Fontainebleau, à Freyr en Belgique, à Kalymnos en Grèce, et bien d'autres encore. J'ai
-          réussi à atteindre le niveau 8a en falaise.
+          {{ $t('Climbing.Cliff.description') }}
         </p>
       </div>
       <div id="routesetting" class="my-5">
         <h5 class="text-secondary my-4">
-          Je suis aussi ouvreur en compétitions et en salles privées depuis 2018, pour plus
-          d'informations, vous pouvez consulter
-          <a href="/about/route-setting" class="text-info"><u>cette page</u></a
+          {{ $t('Climbing.routesetter') }}
+          <a href="/about/route-setting" class="text-info"
+            ><u>{{ $t('Climbing.this-page') }}</u></a
           >.
         </h5>
       </div>

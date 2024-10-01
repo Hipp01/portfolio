@@ -3,7 +3,7 @@
     <div class="bg-image">
       <div class="text-center text-white pt-5 px-3">
         <h1 class="mt-4 display-4">Hippolyte Larzul</h1>
-        <h3 class="mb-4">Full Stack Developer</h3>
+        <h3 class="mb-4">{{ $t('Home.title') }}</h3>
       </div>
       <div class="container bubbles">
         <div class="row">
@@ -120,7 +120,7 @@
             </div>
           </div>
         </div>
-        <p class="text-light click mt-5">Cliquez sur les bulles pour en savoir plus !</p>
+        <p class="text-light click mt-5">{{ $t('Home.more') }}</p>
       </div>
     </div>
   </div>

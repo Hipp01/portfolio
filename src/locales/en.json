@@ -1,0 +1,304 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "Home": {
+    "title": "Full Stack Developer",
+    "more": "Click on the bubbles to learn more !"
+  },
+  "Footer": "Made with ❤️ by Hippolyte Larzul. All rights reserved.",
+  "Contact": {
+    "title": "A project, a question, a need ?",
+    "contact-me": "Contact me !",
+    "Form": {
+      "name": "Name",
+      "surname": "Surname",
+      "email": "Email",
+      "subject": "Subject",
+      "Subject": {
+        "select": "Select a subject",
+        "computer-science": "Computer Science",
+        "climbing": "Climbing",
+        "education": "Education",
+        "other": "Other"
+      },
+      "message": "Message",
+      "loading": "Sending...",
+      "send": "Send the message",
+      "limit": "You have reached the sending limit for this period. Try again later.",
+      "max-reached": "You have reached the maximum limit of messages sent.",
+      "success": "Your message has been sent successfully !",
+      "error": "Error while sending the message:",
+      "status-error": "An error occurred, please try again later."
+    }
+  },
+  "Mobile": {
+    "title": "My journey in Mobile Applications development",
+    "description": "Since 2021 and during my Master in E-Services, I have been passionate about developing mobile applications using various technologies such as",
+    "projects-did": "Here are some projects I worked on :",
+    "Projects": {
+      "Cryptac": {
+        "title": "Cryptac",
+        "name": "Cryptocurrency Tracking Application",
+        "description": "Cryptac is an application created with Kotlin to track cryptocurrencies. This application allows users to check cryptocurrency prices, percentage changes, as well as detailed descriptions. Users can also add their favorite cryptocurrencies to a watchlist for easier access."
+      },
+      "SpacePics": {
+        "title": "SpacePics",
+        "name": "Space Images Application",
+        "description": "SpacePics was developed with Flutter, it is an application that displays daily images from NASA, accompanied by descriptions. The application includes a translation feature in French, making the information accessible to a wider audience."
+      },
+      "BDB": {
+        "title": "Bou'D'Brousse",
+        "name": "Management Application for a Climbing Club",
+        "description": "My first major project was an application for my climbing club. This application manages the club's members and allows them to validate their entries according to their authorized time slots. The application was developed with ReactNative, and the API with Node.js, offering a smooth user experience on Android and iOS."
+      },
+      "YouHunt": {
+        "title": "YouHunt",
+        "name": "Treasure Hunt Application in Reality",
+        "description": "For my Master's final project, I created an application that allows you to design and participate in treasure hunts in real life. Each location reached is associated with questions, a points system, and other engaging features, making the experience interactive and fun."
+      }
+    },
+    "projects-more": "Discover more projects",
+    "this-page": "on this page"
+  },
+  "Projects": {
+    "title": "My Journey in Programming",
+    "description": "Since I started my journey in programming, I have explored various technologies and programming languages such as",
+    "projects-did": "Here are some projects I have worked on:",
+    "Projects": {
+      "MMS": {
+        "title": "Make My Sledge",
+        "name": "Web application for sled dog management",
+        "description": "During my gap year (2023-2024) in Swedish Lapland, I developed a web application to manage the sled dogs and sleds of the kennel. <br/> With this application, users can view information about the dogs, add, modify, and delete them. They can also create different sleds based on their weight, comfort with the dogs, and desired speed. The sleds are created in a way that ensures dogs that do not get along are not placed together."
+      },
+      "Memoire": {
+        "title": "Master's Thesis",
+        "name": "The Influence of Dark Patterns on Users",
+        "description": "For my Master's thesis, I studied the influence of Dark Patterns on users. <br/> Dark Patterns are design techniques that manipulate users into making decisions they might not have made otherwise. I examined the impact of these techniques on users, their perception, and their trust in websites."
+      },
+      "SlidesMap": {
+        "title": "Slides Map",
+        "name": "Mobile Application for Slides",
+        "description": "I created a mobile app to find the closest slides near your location. <br/> This app allows users to find slides around them, see their fun levels, rate, and comment on them. They can also add new slides and share them with the community. <br/> This app is not live as it is still under development."
+      },
+      "Volunteering": {
+        "title": "Volunteering Website",
+        "name": "Backsjön Farm Volunteering",
+        "description": "To recruit new volunteers for the Backsjön farm in northern Sweden, I created a website using Vue.js. <br/> This site allows users to discover the farm, the activities offered, the animals, and the farm's values. They can also sign up to become volunteers based on the desired dates and available spots, and participate in farm life. <br/> This site is not live due to a misunderstanding with the owners."
+      },
+      "BubbleCursor": {
+        "title": "Bubble Cursor",
+        "name": "Human-Computer Interaction Interface Experiment",
+        "description": "As part of my Master's degree, I developed a human-computer interface experiment to study the impact of the shape and size of different pointing cursors on users' speed and accuracy. <br/> This experiment was developed in Python with the PyQt5 library and was tested on several participants. The goal was to see if a different cursor could improve users' speed and accuracy on targets of various sizes."
+      },
+      "AoC": {
+        "title": "Advent of Code",
+        "name": "Advent Calendar of Code",
+        "description": "Every year, I participate in the \"Advent of Code\" event, which involves solving programming problems every day in December. <br/> This allows me to explore new problems, learn new coding methods, and improve my programming skills. <br/> You can find my solutions on my <a href=https://github.com/Hipp01/AoC target=\"_blank\" class='text-white'\">GitHub</a>."
+      },
+      "Flower": {
+        "title": "Flower Electrical Measurement",
+        "name": "Analysis of Electrical Consumption of the Flower Library",
+        "description": "As part of my Master's degree, I conducted a study on the electrical consumption of the federated learning library Flower. <br/> I analyzed the library's electricity consumption data to understand user habits, peak and low usage periods. I then proposed solutions to reduce electricity consumption and improve the library's energy efficiency."
+      },
+      "Discord": {
+        "title": "Discord Bot",
+        "name": "Discord Bot for Interactive Games",
+        "description": "I created a Discord Bot that allows users to play interactive games alone or with others. <br/> This Bot offers various games such as battleship, hangman, tic-tac-toe, guess the number... Users can play against each other or the Bot, and earn points based on their performance."
+      }
+    },
+    "projects-more": "To view more of my projects in mobile development, you can check out",
+    "this-page": "this page",
+    "list-languages": "Here is a list of additional languages and technologies I have learned during my studies"
+  },
+  "Climbing": {
+    "title": "My Passion: Climbing",
+    "description": "After trying several sports like tennis, basketball, judo, athletics, or handball, I turned to climbing in 2011, which became a passion driving me to push my limits. Whether it's indoors, on boulders, or on cliffs, I have developed a true passion for this demanding discipline that combines strength, agility, flexibility, and mental endurance.",
+    "achievements": "Here are some photos of my climbing accomplishments:",
+    "Photos": {
+      "1": {
+        "title": "Indoor Climbing Competition",
+        "description": "Bouldering competition in Villeneuve d'Ascq, where I finished 3rd in 2021."
+      },
+      "2": {
+        "title": "Speed Climbing",
+        "description": "European University Games 2022, where I finished 3rd in speed climbing."
+      },
+      "3": {
+        "title": "Lead Climbing",
+        "description": "European University Games 2022, lead climbing final."
+      },
+      "4": {
+        "title": "European Games Podium",
+        "description": "Podium of the European University Games 2022, with the Lille team ahead of the UK and Austria."
+      }
+    },
+    "palmares": "Here are some of my competition results:",
+    "Results": {
+      "1": "1st at the European University Games in team climbing in 2022",
+      "2": "3rd at the European University Games in speed climbing in 2022",
+      "3": "Regional Champion in 2020",
+      "4": "Departmental Champion in 2020, 2019, 2018, 2017, 2016, 2015, 2014"
+    },
+    "Cliff": {
+      "title": "Outdoor Climbing:",
+      "description": "I have had the opportunity to climb at several natural sites in France, Belgium, and Greece. I completed beautiful routes in the Briançon region, St Léger du Ventoux, Fontainebleau, Freyr in Belgium, Kalymnos in Greece, and many others. I have achieved a level of 8a on cliffs."
+    },
+    "routesetter": "I have also been a routesetter in competitions and private gyms since 2018. For more information, you can check out",
+    "this-page": "this page"
+  },
+  "Routesetting": {
+    "title": "Route Setting in Climbing",
+    "description": "Route setting in climbing is a discipline that requires not only technical skills but also great creativity. Since 2018, I've had the opportunity to set routes and boulders in competitions and private gyms, adding my personal touch to each creation.",
+    "achievements": "Here are some photos of my route-setting creations:",
+    "Photos": {
+      "1": {
+        "title": "Competition Bouldering Route Setting",
+        "description": "For regional or departmental championships, we create various boulders for both children and adults."
+      },
+      "2": {
+        "title": "Club Route Setting",
+        "description": "Since I started climbing, I have always volunteered to set routes for my club, sharing my passion with others."
+      },
+      "3": {
+        "title": "Competition Lead Route Setting",
+        "description": "I completed my route setter training in 2018 and have since regularly set routes for local and regional competitions."
+      },
+      "4": {
+        "title": "Private Gym Bouldering",
+        "description": "I've had the opportunity to set routes for private gyms, such as Climb Up, Vertical'Art, and Dock79. The boulders range from beginner to expert."
+      }
+    },
+    "experience": "Notable experiences:",
+    "notableExperiences": {
+      "1": "Route Setting for the Regional Championship 2023",
+      "2": "Private Gym Route Setting since 2018",
+      "3": "Route Setter Certification in 2018",
+      "4": "Route Setting for the Youth Combined Departmental and Regional Championship 2022"
+    },
+    "philosophy": "My Route Setting Philosophy:",
+    "philosophyDescription": "For me, route setting is a way to push not only the limits of climbers but also my own as a setter. I love creating routes that are not just physical challenges but also mental puzzles that require climbers to think through each move.",
+    "contact": "For more information or to discuss route-setting projects, feel free to contact me directly",
+    "climbing": "I've been climbing since 2011. For more information about my climbing journey, you can visit",
+    "here": "here",
+    "this-page": "this page"
+  },
+  "Travel": {
+    "title": "My Travels",
+    "description": "Traveling is a way for me to discover new cultures, explore beautiful landscapes, and meet inspiring people. Whether it's for a short trip or a multi-month adventure, each journey brings me a wealth of experiences that profoundly shape my life.",
+    "photosTitle": "Here are some photos from my travels:",
+    "Carousel": {
+      "1": {
+        "title": "Trip to Lodz, Poland",
+        "description": "European competition in Lodz, Poland in 2022.",
+        "alt": "Trip to Lodz, Poland"
+      },
+      "2": {
+        "title": "Weekend in Brussels",
+        "description": "Discovering the Belgian capital and its culinary specialties.",
+        "alt": "Weekend in Brussels"
+      },
+      "3": {
+        "title": "Stay in Lisbon, Portugal",
+        "description": "Visiting historic neighborhoods, monuments, and enjoying Portuguese culinary specialties.",
+        "alt": "Stay in Lisbon, Portugal"
+      },
+      "4": {
+        "title": "Weekend in Paris",
+        "description": "Exploring the French capital and its iconic landmarks.",
+        "alt": "Weekend in Paris"
+      },
+      "5": {
+        "title": "Stay in Budapest, Hungary",
+        "description": "Exploring thermal baths and medieval streets in the city.",
+        "alt": "Stay in Budapest, Hungary"
+      },
+      "6": {
+        "title": "Stay in Stockholm, Sweden",
+        "description": "Discovering the Swedish capital and its history museums.",
+        "alt": "Stay in Stockholm, Sweden"
+      },
+      "7": {
+        "title": "Weekend in Helsinki, Finland",
+        "description": "After spending 2 months in Finland for volunteering, I visited the capital and its Christmas market.",
+        "alt": "Weekend in Helsinki, Finland"
+      },
+      "8": {
+        "title": "Northern Lights in Lapland",
+        "description": "Volunteering in Swedish Lapland at a sled dog farm, with the bonus of seeing the Northern Lights.",
+        "alt": "Northern Lights in Lapland"
+      },
+      "9": {
+        "title": "Weekend in Bergen, Norway",
+        "description": "Discovering the city of Bergen, surrounded by fjords and mountains.",
+        "alt": "Weekend in Bergen, Norway"
+      },
+      "10": {
+        "title": "Weekend in Copenhagen, Denmark",
+        "description": "Discovering the Danish capital, with its canals and bikes.",
+        "alt": "Weekend in Copenhagen, Denmark"
+      },
+      "prev": "Previous",
+      "next": "Next"
+    },
+    "destinationsTitle": "Some of my favorite destinations:",
+    "Destinations": {
+      "1": {
+        "name": "Stockholm",
+        "description": "Sweden. A beautiful city in both winter and summer, full of history and culture. For me, the most beautiful city in the world."
+      },
+      "2": {
+        "name": "Sweden",
+        "description": "from Lapland to Malmö. A beautiful country with varied landscapes and preserved nature. I lived there for 8 months while traveling to discover the culture, landscapes, and traditions."
+      },
+      "3": {
+        "name": "Bergen",
+        "description": "Norway. A city in a Norwegian fjord, a breath of fresh air by the water, surrounded by mountains."
+      },
+      "4": {
+        "name": "Copenhagen",
+        "description": "Denmark. A charming city with its canals, culinary specialties, and bicycles."
+      },
+      "5": {
+        "name": "Budapest",
+        "description": "Hungary. A charming city with thermal baths and medieval architecture."
+      }
+    },
+    "gapYearTitle": "My Travel Year in 2023 - 2024:",
+    "gapYearIntroduction": "After obtaining my Master's in E-Services in 2023, I decided to pack my backpack and visit the Scandinavian countries I fell in love with.",
+    "GapYearDetails": {
+      "finland": "I started with Finland, the happiest country in the world. For 2 months, I lived and helped on a farm with Belgian Malinois, horses, chickens, rabbits, etc. I discovered Finnish culture, saunas, lakes, and forests in the land of Christmas.",
+      "swedenLapland": "Next, I went to Swedish Lapland for volunteering on a sled dog farm. During the winter season, I trained huskies, fed them, cared for them, and loved them. I also witnessed the Northern Lights, reindeer, frozen lakes, and snowy forests. Living at -30°C is a unique and unforgettable experience.",
+      "southSweden": "Finally, I moved to the south of Sweden to work on a self-sufficient farm with sheep, horses, chickens, etc. I immersed myself in Swedish culture, traditions, landscapes, and culinary specialties. I developed my skills in teamwork, autonomy, and organization.",
+      "norwayDenmark": "I also had the opportunity to visit Norway and Denmark, where the landscapes are breathtaking. Between fjords, mountains, lakes, and the sea, I explored stunning landscapes and charming, vibrant cities."
+    }
+  },
+  "Education": {
+    "title": "Online Teaching",
+    "description": "I have been an online tutor since 2022, assisting students from primary to high school in scientific subjects. My goal is to make these subjects accessible to everyone, helping each student develop a deep and lasting understanding.",
+    "subjectsTitle": "Subjects Taught :",
+    "methodsTitle": "Teaching Methods :",
+    "methodsDescription": "I adapt my teaching methods according to the needs of each student, focusing on problem-solving and learning through examples. Classes are conducted online via interactive tools, allowing personalized follow-up and effective communication. I also provide exercises and homework to reinforce learning and prepare for exams. Finally, I am available to answer all student questions outside of classes via email or instant messaging.",
+    "levelsTitle": "School Levels :",
+    "contactInfo": "For more information or to book a class, please visit",
+    "contactLink": "this page",
+    "Subjects": {
+      "computer": "Computer Science",
+      "mathematics": "Mathematics",
+      "electronics": "Electronics",
+      "physics": "Physics",
+      "mechanics": "Mechanics",
+      "chemistry": "Chemistry",
+      "engineering": "Engineering Sciences",
+      "algorithm": "Algorithms"
+    },
+    "Levels": {
+      "primary": "Primary",
+      "middleSchool": "Middle School",
+      "highSchool": "High School",
+      "university": "University"
+    }
+  }
+}

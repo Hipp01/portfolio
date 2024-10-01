@@ -1,10 +1,9 @@
 <template>
   <div class="dev">
     <div class="container">
-      <h1 class="title my-5">Mon Parcours dans la Programmation</h1>
+      <h1 class="title my-5">{{ $t('Projects.title') }}</h1>
       <p>
-        Depuis que j'ai commencé mon parcours dans la programmation, j'ai exploré diverses
-        technologies et langages de programmation tels que
+        {{ $t('Projects.description') }}
         <a id="python" href="https://www.python.org" target="_blank">Python</a>,
         <a
           id="javascript"
@@ -13,7 +12,7 @@
           >JavaScript</a
         >, ou <a id="kotlin" href="https://kotlinlang.org" target="_blank">Kotlin</a>.
       </p>
-      <h4 class="my-4">Voici quelques projets sur lesquels j'ai travaillé :</h4>
+      <h4 class="my-4">{{ $t('Projects.projects-did') }}</h4>
 
       <div class="project" v-for="(project, index) in projects" :key="index">
         <div class="row flex-md-row flex-column px-2">
@@ -42,16 +41,14 @@
       </div>
       <div>
         <h5 class="text-secondary my-4">
-          Pour consulter mes autres projets, dans le développement mobile, vous pouvez regarder
-          <a href="/about/mobile" class="text-info"><u>cette page</u></a
+          {{ $t('Projects.projects-more') }}
+          <a href="/about/mobile" class="text-info"
+            ><u>{{ $t('Projects.this-page') }}</u></a
           >.
         </h5>
       </div>
       <div class="container py-5">
-        <h4 class="text-center mb-4">
-          Voici une liste de langages et technologies supplémentaires que j'ai appris durant mon
-          cursus :
-        </h4>
+        <h4 class="text-center mb-4">{{ $t('Projects.list-languages') }} :</h4>
         <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-4">
           <LanguageCard
             v-for="(langage, index) in langages"
@@ -68,8 +65,9 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, ref, watch } from 'vue'
 import LanguageCard from './LanguageCard.vue'
+import { useI18n } from 'vue-i18n'
 
 import MakeMySledge from '@/assets/images/makemysledge.png'
 import SlidesMap from '@/assets/images/slides-map.png'
@@ -109,82 +107,87 @@ export default defineComponent({
   components: {
     LanguageCard
   },
+  setup() {
+    const { t, locale } = useI18n()
+
+    const getProjects = () => [
+      {
+        title: t('Projects.Projects.MMS.title'),
+        langage: 'Flask #React.js',
+        name: t('Projects.Projects.MMS.name'),
+        description: t('Projects.Projects.MMS.description'),
+        logo: MakeMySledge,
+        link: 'https://make-my-sledge.web.app'
+      },
+      {
+        title: t('Projects.Projects.Memoire.title'),
+        langage: 'LaTex',
+        name: t('Projects.Projects.Memoire.name'),
+        description: t('Projects.Projects.Memoire.description'),
+        logo: DarkPatterns,
+        link: 'https://drive.google.com/file/d/1au23CZIKtarVc0ihUrF9bREZKCT2iRyd/view?usp=sharing'
+      },
+      {
+        title: t('Projects.Projects.SlidesMap.title'),
+        langage: 'ReactNative',
+        name: t('Projects.Projects.SlidesMap.name'),
+        description: t('Projects.Projects.SlidesMap.description'),
+        logo: SlidesMap,
+        link: 'https://github.com/Hipp01/slides-map'
+      },
+      {
+        title: t('Projects.Projects.Volunteering.title'),
+        langage: 'Vue.js',
+        name: t('Projects.Projects.Volunteering.name'),
+        description: t('Projects.Projects.Volunteering.description'),
+        logo: Backsjon,
+        link: 'https://github.com/Hipp01/volunteering-farm-backsjon'
+      },
+      {
+        title: t('Projects.Projects.BubbleCursor.title'),
+        langage: 'Python',
+        name: t('Projects.Projects.BubbleCursor.name'),
+        description: t('Projects.Projects.BubbleCursor.description'),
+        logo: BubbleCursor,
+        link: 'https://github.com/Hipp01/Bubble-cursor'
+      },
+      {
+        title: t('Projects.Projects.AoC.title'),
+        langage: 'Python',
+        name: t('Projects.Projects.AoC.name'),
+        description: t('Projects.Projects.AoC.description'),
+        logo: AoC,
+        link: 'https://github.com/Hipp01/AoC'
+      },
+      {
+        title: t('Projects.Projects.Flower.title'),
+        langage: 'Python',
+        name: t('Projects.Projects.Flower.name'),
+        description: t('Projects.Projects.Flower.description'),
+        logo: Flower,
+        link: 'https://github.com/Hipp01/Consommation_Flower'
+      },
+      {
+        title: t('Projects.Projects.Discord.title'),
+        langage: 'Python',
+        name: t('Projects.Projects.Discord.name'),
+        description: t('Projects.Projects.Discord.description'),
+        logo: Bot,
+        link: 'https://github.com/Hipp01/bot-discord'
+      }
+    ]
+    const projects = ref(getProjects())
+
+    watch(locale, () => {
+      projects.value = getProjects()
+    })
+
+    return {
+      projects
+    }
+  },
   data() {
     return {
-      projects: [
-        {
-          title: 'Make my sledge',
-          langage: 'Flask #React.js',
-          name: 'Application web de gestion de chiens de traineau',
-          description:
-            "Durant mon année de césure (2023-2024) en Laponie Suédoise, j'ai développé une application web pour gérer les chiens et les traineaux de l'élevage. <br/> Avec cette application les utilisateurs peuvent avoir des informations sur les chiens, en ajouter, les modifier et les supprimer. Ils peuvent aussi créer différents traineaux en fonction de leurs poids, aisance avec les chiens et leurs envie de vitesse. Les traineaux sont créés de façon à ce que les chiens qui ne s'entendent pas ne soient pas ensemble.",
-          logo: MakeMySledge,
-          link: 'https://make-my-sledge.web.app'
-        },
-        {
-          title: 'Mémoire de Master',
-          langage: 'LaTex',
-          name: "L'influence des Dark Patterns sur les utilisateurs",
-          description:
-            "Pour mon mémoire de Master, j'ai étudié l'influence des Dark Patterns sur les utilisateurs. <br/> Les Dark Patterns sont des techniques de conception qui poussent les utilisateurs à prendre des décisions qu'ils n'auraient pas prises autrement. J'ai étudié l'impact de ces techniques sur les utilisateurs, leur perception et leur confiance envers les sites web.",
-          logo: DarkPatterns,
-          link: 'https://drive.google.com/file/d/1au23CZIKtarVc0ihUrF9bREZKCT2iRyd/view?usp=sharing'
-        },
-        {
-          title: 'Slides Map',
-          langage: 'ReactNative',
-          name: 'Application mobile de Toboggans',
-          description:
-            "J'ai créé une application mobile pour trouver les toboggans les plus proches de chez soi. <br/> Cette application permet aux utilisateurs de trouver les toboggans autour d'eux, de voir leurs niveaux d'amusement, de les noter et de les commenter. Ils peuvent aussi ajouter de nouveaux toboggans et les partager avec la communauté. <br/> Cette application n'est pas en ligne car elle est encore en développement.",
-          logo: SlidesMap,
-          link: 'https://github.com/Hipp01/slides-map'
-        },
-        {
-          title: 'Site de Volontariat',
-          langage: 'Vue.js',
-          name: 'Volntariat Ferme Backsjon',
-          description:
-            "Pour recruter de nouveaux volontaires dans la ferme Backsjön au nord de la Suède, j'ai créé un site web en m'appuyant sur Vue.js. <br/> Ce site permet aux utilisateurs de découvrir la ferme, les activités proposées, les animaux et les valeurs de la ferme. Ils peuvent aussi s'inscrire pour devenir volontaire en fonction des dates voulues et des places disponibles, et participer à la vie de la ferme. <br/> Ce site n'est pas en ligne pour cause de malentendu avec les propriétaires",
-          logo: Backsjon,
-          link: 'https://github.com/Hipp01/volunteering-farm-backsjon'
-        },
-        {
-          title: 'Bubble Cursor',
-          langage: 'Python',
-          name: 'Expérience Interface Interactions Homme-Machine',
-          description:
-            "Dans le cadre de mon Master, j'ai développé une expérience d'interface homme-machine pour étudier l'inmpact de la forme et la taille de différents curseurs de pointage sur la vitesse et la précision des utilisateurs. <br/> Cette expérience a été développée en Python avec la librairie PyQt5 et a été testée sur plusieurs participants. Le but était de voir si un curseur différent pouvait améliorer la vitesse et la précision des utilisateurs, sur différentes tailles de cibles.",
-          logo: BubbleCursor,
-          link: 'https://github.com/Hipp01/Bubble-cursor'
-        },
-        {
-          title: 'Advent of Code',
-          langage: 'Python',
-          name: "Calendrier de l'avent du code",
-          description:
-            'Chaque année, je participe à l\'évènement "Advent of Code" qui consiste à résoudre des problèmes de programmation chaque jour du mois de décembre. <br/> Cela me permet de découvrir de nouveaux problèmes, de nouvelles façons de coder et de m\'améliorer en programmation. <br/> Vous pouvez retrouver mes solutions sur mon <a href=https://github.com/Hipp01/AoC" target="_blank" class=\'text-white\'">GitHub</a>.',
-          logo: AoC,
-          link: 'https://github.com/Hipp01/AoC'
-        },
-        {
-          title: 'Mesure électrique Flower',
-          langage: 'Python',
-          name: 'Analyse de la consommation électrique de la bibliothèque Flower',
-          description:
-            "Dans le cadre de mon Master, j'ai réalisé une étude sur la consommation électrique de la bibliothèque d'apprentissage fédéré Flower. <br/> J'ai analysé les données de consommation électrique de la bibliothèque pour comprendre les habitudes des utilisateurs, les périodes de pointe et les périodes creuses. J'ai ensuite proposé des solutions pour réduire la consommation électrique et améliorer l'efficacité énergétique de la bibliothèque.",
-          logo: Flower,
-          link: 'https://github.com/Hipp01/Consommation_Flower'
-        },
-        {
-          title: 'Bot Discord',
-          langage: 'Python',
-          name: 'Bot Discord pour des jeux interactifs',
-          description:
-            "J'ai créé un Bot Discord qui permet de jouer seul ou à plusieurs à des jeux interactifs. <br/> Ce Bot propose différents jeux comme la bateille navale, le pendu, le morpion, le devine le nombre... Les utilisateurs peuvent jouer entre eux ou contre le Bot, et gagner des points en fonction de leurs performances.",
-          logo: Bot,
-          link: 'https://github.com/Hipp01/bot-discord'
-        }
-      ],
       langages: [
         { id: 'vuejs', image: VueImage, title: 'Vue JS', link: 'https://vuejs.org/' },
         { id: 'react', image: ReactImage, title: 'React', link: 'https://reactjs.org/' },
