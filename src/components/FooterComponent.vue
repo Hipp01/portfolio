@@ -7,7 +7,7 @@
         </button>
       </div>
       <div class="footer-content">
-        <span class="mx-4">&copy; 2024 Portfolio de Hippolyte Larzul. Tous droits réservés.</span>
+        <span class="mx-4">&copy; 2024 {{ $t('Footer') }}</span>
       </div>
     </div>
   </footer>

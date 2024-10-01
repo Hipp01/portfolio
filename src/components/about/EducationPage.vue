@@ -1,12 +1,9 @@
 <template>
   <div class="education-page">
     <div class="education-container">
-      <h1 class="education-title my-5">Enseignement en Ligne</h1>
+      <h1 class="education-title my-5">{{ $t('Education.title') }}</h1>
       <p>
-        Je suis professeur particulier en ligne depuis 2022, j'accompagne des élèves de la primaire
-        à la terminale dans les matières scientifiques. Mon objectif est de rendre ces matières
-        accessibles à tous, en aidant chaque élève à développer une compréhension profonde et
-        durable.
+        {{ $t('Education.description') }}
       </p>
       <h3 class="my-4">Matières enseignées :</h3>
       <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-2 g-md-4">
@@ -18,7 +15,7 @@
                 alt="Informatique"
                 class="card-img-top img-fluid"
               />
-              <h5 class="card-title mt-3">Informatique</h5>
+              <h5 class="card-title mt-3">{{ $t('Education.Subjects.computer') }}</h5>
             </div>
           </div>
         </div>
@@ -30,7 +27,7 @@
                 alt="Mathématiques"
                 class="card-img-top img-fluid"
               />
-              <h5 class="card-title mt-3">Mathématiques</h5>
+              <h5 class="card-title mt-3">{{ $t('Education.Subjects.mathematics') }}</h5>
             </div>
           </div>
         </div>
@@ -42,7 +39,7 @@
                 alt="Electronique"
                 class="card-img-top img-fluid"
               />
-              <h5 class="card-title mt-3">Électronique</h5>
+              <h5 class="card-title mt-3">{{ $t('Education.Subjects.electronics') }}</h5>
             </div>
           </div>
         </div>
@@ -54,7 +51,7 @@
                 alt="Physique"
                 class="card-img-top img-fluid"
               />
-              <h5 class="card-title mt-3">Physique</h5>
+              <h5 class="card-title mt-3">{{ $t('Education.Subjects.physics') }}</h5>
             </div>
           </div>
         </div>
@@ -66,7 +63,7 @@
                 alt="Mécanique"
                 class="card-img-top img-fluid"
               />
-              <h5 class="card-title mt-3">Mécanique</h5>
+              <h5 class="card-title mt-3">{{ $t('Education.Subjects.mechanics') }}</h5>
             </div>
           </div>
         </div>
@@ -78,7 +75,7 @@
                 alt="Chimie"
                 class="card-img-top img-fluid"
               />
-              <h5 class="card-title mt-3">Chimie</h5>
+              <h5 class="card-title mt-3">{{ $t('Education.Subjects.chemistry') }}</h5>
             </div>
           </div>
         </div>
@@ -90,7 +87,7 @@
                 alt="Sciences de l'ingénieur"
                 class="card-img-top img-fluid"
               />
-              <h5 class="card-title mt-3">Sciences de l'ingénieur</h5>
+              <h5 class="card-title mt-3">{{ $t('Education.Subjects.engineering') }}</h5>
             </div>
           </div>
         </div>
@@ -102,12 +99,12 @@
                 alt="Algorithmie"
                 class="card-img-top img-fluid"
               />
-              <h5 class="card-title mt-3">Algorithmie</h5>
+              <h5 class="card-title mt-3">{{ $t('Education.Subjects.algorithm') }}</h5>
             </div>
           </div>
         </div>
       </div>
-      <h3 class="my-4">Niveaux scolaires :</h3>
+      <h3 class="my-4">{{ $t('Education.levelsTitle') }}</h3>
       <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-4">
         <div class="col">
           <div class="card">
@@ -117,7 +114,7 @@
                 alt="Primaire"
                 class="card-img-top img-fluid rounded"
               />
-              <h5 class="card-title mt-3">Primaire</h5>
+              <h5 class="card-title mt-3">{{ $t('Education.Levels.primary') }}</h5>
             </div>
           </div>
         </div>
@@ -129,7 +126,7 @@
                 alt="Collège"
                 class="card-img-top img-fluid rounded"
               />
-              <h5 class="card-title mt-3">Collège</h5>
+              <h5 class="card-title mt-3">{{ $t('Education.Levels.middleSchool') }}</h5>
             </div>
           </div>
         </div>
@@ -141,7 +138,7 @@
                 alt="Lycée"
                 class="card-img-top img-fluid rounded"
               />
-              <h5 class="card-title mt-3">Lycée</h5>
+              <h5 class="card-title mt-3">{{ $t('Education.Levels.highSchool') }}</h5>
             </div>
           </div>
         </div>
@@ -153,31 +150,26 @@
                 alt="Université"
                 class="card-img-top img-fluid rounded"
               />
-              <h5 class="card-title mt-3">Université</h5>
+              <h5 class="card-title mt-3">{{ $t('Education.Levels.university') }}</h5>
             </div>
           </div>
         </div>
       </div>
 
       <div class="mt-5">
-        <h5 class="my-4 d-flex justify-content-center">Méthodes d'enseignement :</h5>
+        <h5 class="my-4 d-flex justify-content-center">
+          {{ $t('Education.methodsTitle') }}
+        </h5>
         <p class="text-start">
-          J'adapte mes méthodes pédagogiques en fonction des besoins de chaque élève, en mettant
-          l'accent sur la résolution de problèmes et l'apprentissage par l'exemple. Les cours se
-          déroulent en ligne via des outils interactifs, permettant un suivi personnalisé et une
-          communication efficace. <br />
-          Je propose également des exercices et des devoirs à réaliser entre les séances, pour
-          renforcer les acquis et préparer les examens. <br />
-          Enfin, je suis disponible pour répondre à toutes les questions des élèves en dehors des
-          cours, par e-mail ou messagerie instantanée.<br />
+          {{ $t('Education.methodsDescription') }}
         </p>
       </div>
 
       <div class="mt-5">
         <h5 class="text-secondary my-4">
-          Pour plus d'informations ou pour réserver un cours, veuillez consulter
+          {{ $t('Education.contactInfo') }}
           <router-link to="/contact" class="nav-link text-info"
-            >cette page<span class="text-secondary">.</span></router-link
+            >{{ $t('Education.contactLink') }}<span class="text-secondary">.</span></router-link
           >
         </h5>
       </div>

@@ -2,11 +2,11 @@
   <div class="contact-page">
     <div class="container my-5">
       <div class="contact-container">
-        <h4 class="my-2">Un projet, une question, un besoin ?</h4>
-        <h1 class="contact-title my-3">Contactez-moi</h1>
+        <h4 class="my-2">{{ $t('Contact.title') }}</h4>
+        <h1 class="contact-title my-3">{{ $t('Contact.contact-me') }}</h1>
         <form @submit.prevent="submitForm" class="contact-form">
           <div class="form-group mb-3 text-start d-flex align-items-center">
-            <label for="name" class="form-label w-25">Nom :</label>
+            <label for="name" class="form-label w-25">{{ $t('Contact.Form.name') }} :</label>
             <input
               type="text"
               id="name"
@@ -17,7 +17,7 @@
             />
           </div>
           <div class="form-group mb-3 text-start d-flex align-items-center">
-            <label for="surname" class="form-label w-25">Prénom :</label>
+            <label for="surname" class="form-label w-25">{{ $t('Contact.Form.surname') }} :</label>
             <input
               type="text"
               id="surname"
@@ -28,7 +28,7 @@
             />
           </div>
           <div class="form-group mb-3 text-start d-flex align-items-center">
-            <label for="email" class="form-label w-25">Email :</label>
+            <label for="email" class="form-label w-25">{{ $t('Contact.Form.email') }} :</label>
             <input
               type="email"
               id="email"
@@ -39,17 +39,19 @@
             />
           </div>
           <div class="form-group mb-3 text-start d-flex align-items-center">
-            <label for="subject" class="form-label w-25">Sujet :</label>
+            <label for="subject" class="form-label w-25">{{ $t('Contact.Form.subject') }} :</label>
             <select id="subject" v-model="subject" class="form-select w-75" required>
-              <option disabled value="">Sélectionnez un sujet</option>
-              <option value="Informatique">Informatique</option>
-              <option value="escalade">Escalade</option>
-              <option value="education">Éducation</option>
-              <option value="autre">Autre</option>
+              <option disabled value="">{{ $t('Contact.Form.Subject.select') }}</option>
+              <option value="Informatique">
+                {{ $t('Contact.Form.Subject.computer-science') }}
+              </option>
+              <option value="escalade">{{ $t('Contact.Form.Subject.climbing') }}</option>
+              <option value="education">{{ $t('Contact.Form.Subject.education') }}</option>
+              <option value="autre">{{ $t('Contact.Form.Subject.other') }}</option>
             </select>
           </div>
           <div class="form-group mb-4 text-start d-flex align-items-start">
-            <label for="message" class="form-label w-25">Message :</label>
+            <label for="message" class="form-label w-25">{{ $t('Contact.Form.message') }} :</label>
             <textarea
               id="message"
               v-model="message"
@@ -65,15 +67,15 @@
             class="btn btn-primary"
             :disabled="loading || isRateLimited || maxEmailsReached"
           >
-            <span v-if="loading">Envoi en cours...</span>
-            <span v-else>Envoyer le message</span>
+            <span v-if="loading">{{ $t('Contact.Form.loading') }}</span>
+            <span v-else>{{ $t('Contact.Form.send') }}</span>
           </button>
           <div v-if="statusMessage" class="mt-3">{{ statusMessage }}</div>
           <div v-if="isRateLimited" class="mt-3 text-danger">
-            Vous avez atteint la limite d'envoi pour cette période. Essayez plus tard.
+            {{ $t('Contact.Form.limit') }}
           </div>
           <div v-if="maxEmailsReached" class="mt-3 text-danger">
-            Vous avez atteint la limite maximale d'envoi de messages.
+            {{ $t('Contact.Form.max-reached') }}
           </div>
         </form>
       </div>
@@ -139,13 +141,13 @@ export default {
           templateParams,
           'F1ySnhe-WmvCPZpzx'
         )
-        this.statusMessage = 'Votre message a été envoyé avec succès !'
+        this.statusMessage = this.$t('Contact.Form.success')
         this.resetForm()
         localStorage.setItem('emailCount', (emailCount + 1).toString())
         this.checkEmailLimits()
       } catch (error) {
-        console.error("Erreur lors de l'envoi du message:", error)
-        this.statusMessage = 'Une erreur est survenue, veuillez réessayer plus tard.'
+        console.error(this.$t('Contact.Form.error'), error)
+        this.statusMessage = this.$t('Contact.Form.status-error')
       } finally {
         this.loading = false
       }

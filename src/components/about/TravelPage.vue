@@ -1,14 +1,11 @@
 <template>
   <div class="travel-passion">
     <div class="travel-container">
-      <h1 class="travel-title my-5">Mes voyages</h1>
+      <h1 class="travel-title my-5">{{ $t('Travel.title') }}</h1>
       <p>
-        Voyager est une façon pour moi de découvrir de nouvelles cultures, d'explorer des paysages
-        magnifiques, et de rencontrer des personnes inspirantes. Que ce soit pour un court séjour ou
-        une aventure de plusieurs mois, chaque voyage m'apporte une richesse d'expériences qui
-        marquent ma vie de manière profonde.
+        {{ $t('Travel.description') }}
       </p>
-      <h5 class="my-4">Voici quelques photos de mes voyages :</h5>
+      <h5 class="my-4">{{ $t('Travel.photosTitle') }}</h5>
       <div id="carouselTravel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators mb-0">
           <button
@@ -78,86 +75,87 @@
           <div class="carousel-item active">
             <img :src="lodz" class="d-block w-100" alt="Voyage à Lodz, Pologne" />
             <div class="carousel-caption d-none d-md-block py-1">
-              <h5 class="pt-0 mt-0">Voyage à Lodz, Pologne</h5>
-              <p class="my-0">Compétition européenne à Lodz en Pologne en 2022.</p>
+              <h5 class="pt-0 mt-0">{{ $t('Travel.Carousel.1.title') }}</h5>
+              <p class="my-0">{{ $t('Travel.Carousel.1.description') }}</p>
             </div>
           </div>
           <div class="carousel-item">
             <img :src="bruxelles" class="d-block w-100" alt="Week-end à Bruxelles" />
             <div class="carousel-caption d-none d-md-block py-1">
-              <h5 class="pt-0 mt-0">Week-end à Bruxelles</h5>
-              <p class="my-0">Découverte de la capitale belge et de ses spécialités culinaires.</p>
+              <h5 class="pt-0 mt-0">{{ $t('Travel.Carousel.2.title') }}</h5>
+              <p class="my-0">{{ $t('Travel.Carousel.2.description') }}</p>
             </div>
           </div>
           <div class="carousel-item">
             <img :src="lisbonne" class="d-block w-100" alt="Séjour à Lisbonne, Portugal" />
             <div class="carousel-caption d-none d-md-block py-1">
-              <h5 class="pt-0 mt-0">Séjour à Lisbonne, Portugal</h5>
+              <h5 class="pt-0 mt-0">{{ $t('Travel.Carousel.3.title') }}</h5>
               <p class="my-0">
-                Visite des quartiers historiques, des monuments et des spécialités culinaires
-                portugaises.
+                {{ $t('Travel.Carousel.3.description') }}
               </p>
             </div>
           </div>
           <div class="carousel-item">
             <img :src="paris" class="d-block w-100" alt="Week-end à Paris" />
             <div class="carousel-caption d-none d-md-block py-1">
-              <h5 class="pt-0 mt-0">Week-end à Paris</h5>
+              <h5 class="pt-0 mt-0">{{ $t('Travel.Carousel.4.title') }}</h5>
               <p class="my-0">
-                Découverte de la capitale française et de ses monuments emblématiques.
+                {{ $t('Travel.Carousel.4.description') }}
               </p>
             </div>
           </div>
           <div class="carousel-item">
             <img :src="budapest" class="d-block w-100" alt="Séjour à Budapest, Hongrie" />
             <div class="carousel-caption d-none d-md-block py-1">
-              <h5 class="pt-0 mt-0">Séjour à Budapest, Hongrie</h5>
+              <h5 class="pt-0 mt-0">{{ $t('Travel.Carousel.5.title') }}</h5>
               <p class="my-0">
-                Exploration des bains thermaux et des ruelles médiévales de la ville.
+                {{ $t('Travel.Carousel.5.description') }}
               </p>
             </div>
           </div>
           <div class="carousel-item">
             <img :src="stockholm" class="d-block w-100" alt="Séjour à Stockholm, Suède" />
             <div class="carousel-caption d-none d-md-block py-1">
-              <h5 class="pt-0 mt-0">Séjour à Stockholm, Suède</h5>
-              <p class="my-0">Découverte de la capitale suédoise et de ses musées d'histoire.</p>
+              <h5 class="pt-0 mt-0">{{ $t('Travel.Carousel.6.title') }}</h5>
+              <p class="my-0">
+                {{ $t('Travel.Carousel.6.description') }}
+              </p>
             </div>
           </div>
           <div class="carousel-item">
             <img :src="helsinki" class="d-block w-100" alt="Séjour à Helsinki, Finlande" />
             <div class="carousel-caption d-none d-md-block py-1 px-1">
-              <h5 class="pt-0 mt-0">Week-end à Helsinki, Finlande</h5>
+              <h5 class="pt-0 mt-0">{{ $t('Travel.Carousel.7.title') }}</h5>
               <p class="my-0">
-                Après avoir passé 2 mois en Finlande pour du bénévolat, il fallait bien visiter la
-                capitale et son marché de Noël.
+                {{ $t('Travel.Carousel.7.description') }}
               </p>
             </div>
           </div>
           <div class="carousel-item">
             <img :src="laponie" class="d-block w-100" alt="Aurores boréales en Laponie" />
             <div class="carousel-caption d-none d-md-block py-1">
-              <h5 class="pt-0 mt-0">Aurores boréales en Laponie</h5>
+              <h5 class="pt-0 mt-0">{{ $t('Travel.Carousel.8.title') }}</h5>
               <p class="my-0">
-                Volontariat en Laponie Suédoise, dans une ferme à chiens de traîneau, avec des
-                aurores boréales en prime.
+                {{ $t('Travel.Carousel.8.description') }}
               </p>
             </div>
           </div>
           <div class="carousel-item">
             <img :src="bergen" class="d-block w-100" alt="Week-end à Bergen, Norvège" />
             <div class="carousel-caption d-none d-md-block py-1">
-              <h5 class="pt-0 mt-0">Week-end à Bergen, Norvège</h5>
+              <h5 class="pt-0 mt-0">{{ $t('Travel.Carousel.9.title') }}</h5>
               <p class="my-0">
-                Découverte de la ville de Bergen, entourée de fjords et de montagnes.
+                {{ $t('Travel.Carousel.9.description') }}
               </p>
             </div>
           </div>
           <div class="carousel-item">
             <img :src="copenhague" class="d-block w-100" alt="Week-end à Copenhague, Danemark" />
             <div class="carousel-caption d-none d-md-block py-1">
-              <h5 class="pt-0 mt-0">Week-end à Copenhague, Danemark</h5>
-              <p class="my-0">Découverte de la capitale danoise, entre canaux et vélos.</p>
+              <h5 class="pt-0 mt-0">{{ $t('Travel.Carousel.10.title') }}</h5>
+              <p class="my-0">
+                {{ $t('Travel.Carousel.10.description') }}
+              </p>
             </div>
           </div>
         </div>
@@ -182,54 +180,50 @@
       </div>
       <div id="destinations" class="my-5">
         <h5 class="my-4 d-flex justify-content-center">
-          Quelques-unes de mes destinations favorites :
+          {{ $t('Travel.destinationsTitle') }}
         </h5>
         <ul class="text-start">
           <li>
-            <a id="stockholm" href="https://fr.wikipedia.org/wiki/Stockholm" target="blank"
-              >Stockholm</a
-            >, Suède. Une ville magnifique en hiver comme en été, pleine d'histoire et de culture.
-            Pour moi la plus belle ville du monde.
+            <a id="stockholm" href="https://fr.wikipedia.org/wiki/Stockholm" target="blank">{{
+              $t('Travel.Destinations.1.name')
+            }}</a
+            >, {{ $t('Travel.Destinations.1.description') }}
           </li>
           <li>
-            <a id="sweden" href="https://fr.wikipedia.org/wiki/Su%C3%A8de" target="_blank"
-              >La Suède</a
-            >, de la Laponie à Malmö. Un pays magnifique, avec des paysages variés et une nature
-            préservée. J'y ai vécu pendant 8 mois tout en voyageant pour découvrir la culture, les
-            paysages et les traditions.
+            <a id="sweden" href="https://fr.wikipedia.org/wiki/Su%C3%A8de" target="_blank">{{
+              $t('Travel.Destinations.2.name')
+            }}</a
+            >, {{ $t('Travel.Destinations.2.description') }}
           </li>
           <li>
             <a
               id="bergen"
               href="https://fr.wikipedia.org/wiki/Bergen_(Norv%C3%A8ge)"
               target="_blank"
-              >Bergen</a
-            >, Norvège. Une ville dans un Fjörd Norvégien, une source d'air au bord de l'eau,
-            entourée de montagnes.
+              >{{ $t('Travel.Destinations.3.name') }}</a
+            >, {{ $t('Travel.Destinations.3.description') }}
           </li>
           <li>
-            <a id="copenhague" href="https://fr.wikipedia.org/wiki/Copenhague" target="_blank"
-              >Copenhague</a
-            >, Danemark. Une ville pleine de charme, avec ses canaux, ses spécialités culinaires et
-            ses vélos.
+            <a id="copenhague" href="https://fr.wikipedia.org/wiki/Copenhague" target="_blank">{{
+              $t('Travel.Destinations.4.name')
+            }}</a
+            >, {{ $t('Travel.Destinations.4.description') }}
           </li>
           <li>
-            <a id="budapest" href="https://fr.wikipedia.org/wiki/Budapest" target="_blank"
-              >Budapest</a
-            >, Hongrie. Une ville pleine de charme, avec ses bains thermaux et son architecture
-            médiévale.
+            <a id="budapest" href="https://fr.wikipedia.org/wiki/Budapest" target="_blank">{{
+              $t('Travel.Destinations.5.name')
+            }}</a
+            >, {{ $t('Travel.Destinations.5.description') }}
           </li>
         </ul>
       </div>
       <div id="gap-year" class="my-5">
-        <h3 class="my-4 d-flex justify-content-center">Mon année de voyage en 2023 - 2024 :</h3>
+        <h3 class="my-4 d-flex justify-content-center">{{ $t('Travel.gapYearTitle') }}</h3>
         <p class="text-start">
-          Après avoir obtenu mon Master en E-Services en 2023, j'ai décidé de prendre mon sac à dos
-          et de visiter les pays scandinaves desquels je suis tombé amoureux. <br />
+          {{ $t('Travel.gapYearIntroduction') }}
           <br />
-          J'ai commencé par la Finlande, le pays le plus heureux du monde. Pendant 2 mois j'ai vécu
-          et aidé dans un élevage de malinois, avec des chevaux, poules, lapins, etc. J'ai pu
-          découvrir la culture finlandaise, les saunas, les lacs et les forêts du pays de Noël.
+          <br />
+          {{ $t('Travel.GapYearDetails.finland') }}
         </p>
         <div class="d-flex align-items-center justify-content-center my-2">
           <img :src="finlande1" alt="Finlande" class="img-fluid rounded img-small mx-2" />
@@ -237,10 +231,7 @@
           <img :src="finlande3" alt="Finlande" class="img-fluid rounded img-small mx-2" />
         </div>
         <p class="text-start mt-4">
-          Ensuite direction la Laponie Suédoise, pour un volontariat dans une ferme à chiens de
-          traîneau. Durant la saison hivernale, j'ai pu entraîner les huskies, les nourrir, les
-          soigner, et les aimer. J'ai aussi pu découvrir les aurores boréales, les rennes, les lacs
-          gelés, et les forêts enneigées. Vivre sous -30°C est une expérience unique et inoubliable.
+          {{ $t('Travel.GapYearDetails.swedenLapland') }}
         </p>
         <div class="d-flex align-items-center justify-content-center my-2">
           <img :src="sweden1" alt="Suède" class="img-fluid rounded img-small mx-2" />
@@ -248,15 +239,10 @@
           <img :src="sweden3" alt="Suède" class="img-fluid rounded img-small mx-2" />
         </div>
         <p class="text-start mt-4">
-          Enfin, je suis allé plus au sud de la Suède pour travailler dans une ferme autosuffisante
-          avec des moutons, chevaux, poules, etc. J'ai pu découvrir la culture suédoise, les
-          traditions, les paysages, et les spécialités culinaires. J'ai ainsi développé mes
-          compétences en travail d'équipe, en autonomie et en organisation.
+          {{ $t('Travel.GapYearDetails.southSweden') }}
           <br />
           <br />
-          J'ai aussi eu l'occasion de visiter la Norvège et le Danemark où les paysages sont à
-          couper le souffle. Entre Fjörds, montagnes, lacs, et mer, j'ai pu découvrir des paysages
-          magnifiques et des villes pleines de charme et de vie.
+          {{ $t('Travel.GapYearDetails.norwayDenmark') }}
         </p>
         <div class="div-images p-2 rounded">
           <div class="d-flex align-items-center justify-content-center mt-2 pb-1">
